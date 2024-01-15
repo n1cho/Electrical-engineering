@@ -74,6 +74,7 @@
             MainPicture.TabIndex = 0;
             MainPicture.TabStop = false;
             MainPicture.Paint += MainPicture_Paint;
+            MainPicture.MouseClick += MainPicture_MouseClick;
             // 
             // LabelElementERS
             // 
