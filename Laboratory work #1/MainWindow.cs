@@ -22,6 +22,16 @@ namespace Laboratory_work__1
         public MainWindow()
         {
             InitializeComponent();
+
+            if (RadioButtonI.Checked || RadioButtonR.Checked)
+            {
+                PanelInputElement.Visible = true;
+            }
+            else
+            {
+                PanelInputElement.Visible = false;
+            }
+            PanelResult.Visible = false;
         }
 
         private void MainPicture_Paint(object sender, PaintEventArgs e)
@@ -31,31 +41,37 @@ namespace Laboratory_work__1
             { // Switch SA1
                 Graphic.DrawLine(Pens.Black, Coordinates[0, 0, 0], Coordinates[0, 0, 1],
                     Coordinates[0, 1, 0], Coordinates[0, 1, 1]);
+                if (Switches[5]) { TextBoxERS1.ReadOnly = false; } else { TextBoxERS1.ReadOnly = true; }
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[0, 0, 0], Coordinates[0, 0, 0],
                     Coordinates[0, 2, 0], Coordinates[0, 2, 1]);
+                TextBoxERS1.ReadOnly = true;
             }
             if (Switches[1]) // Switch SA2
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[1, 0, 0], Coordinates[1, 0, 1],
                     Coordinates[1, 1, 0], Coordinates[1, 1, 1]);
+                if (Switches[6]) { TextBoxERS2.ReadOnly = false; } else { TextBoxERS2.ReadOnly = true; }
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[1, 0, 0], Coordinates[1, 0, 1],
                     Coordinates[1, 2, 0], Coordinates[1, 2, 1]);
+                TextBoxERS2.ReadOnly = true;
             }
             if (Switches[2]) // Switch SA3
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[2, 0, 0], Coordinates[2, 0, 1],
                     Coordinates[2, 1, 0], Coordinates[2, 1, 1]);
+                TextBoxElement3.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[2, 0, 0], Coordinates[2, 0, 1],
                     Coordinates[2, 2, 0], Coordinates[2, 2, 1]);
+                TextBoxElement3.ReadOnly = true;
             }
             if (Switches[3]) // Switch On/Off R3
             {
@@ -81,21 +97,25 @@ namespace Laboratory_work__1
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 1, 0], Coordinates[5, 1, 1]);
+                TextBoxElement1.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 2, 0], Coordinates[5, 2, 1]);
+                TextBoxElement1.ReadOnly = true;
             }
             if (Switches[6]) // Switch On/Off Right site shem
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[6, 0, 0], Coordinates[6, 0, 1],
                     Coordinates[6, 1, 0], Coordinates[6, 1, 1]);
+                TextBoxElement2.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[6, 0, 0], Coordinates[6, 0, 1],
                     Coordinates[6, 2, 0], Coordinates[6, 2, 1]);
+                TextBoxElement2.ReadOnly = true;
             }
         }
 
@@ -114,6 +134,39 @@ namespace Laboratory_work__1
                 }
             }
             this.Refresh();
+        }
+
+        private void RadioButtonI_CheckedChanged(object sender, EventArgs e)
+        {
+            PanelInputElement.Visible = true;
+            if (RadioButtonI.Checked)
+            {
+                LabelElement1.Text = "I1 = ";
+                LabelElement2.Text = "I2 = ";
+                LabelElement3.Text = "I3 = ";
+                LabelResultElement1.Text = "R1 = ";
+                LabelResultElement2.Text = "R2 = ";
+                LabelResultElement3.Text = "R3 = ";
+            }
+        }
+
+        private void RadioButtonR_CheckedChanged(object sender, EventArgs e)
+        {
+            PanelInputElement.Visible = true;
+            if (RadioButtonR.Checked)
+            {
+                LabelElement1.Text = "R1 = ";
+                LabelElement2.Text = "R2 = ";
+                LabelElement3.Text = "R3 = ";
+                LabelResultElement1.Text = "I1 = ";
+                LabelResultElement2.Text = "I2 = ";
+                LabelResultElement3.Text = "I3 = ";
+            }
+        }
+
+        private void GetResult_Click(object sender, EventArgs e)
+        {
+            PanelResult.Visible = true;
         }
     }
 }

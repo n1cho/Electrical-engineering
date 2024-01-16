@@ -35,7 +35,7 @@
             TextBoxERS2 = new TextBox();
             LabelERS2 = new Label();
             LabelDano = new Label();
-            RadionButtonI = new RadioButton();
+            RadioButtonI = new RadioButton();
             RadioButtonR = new RadioButton();
             LabelElement = new Label();
             LabelElement1 = new Label();
@@ -60,8 +60,10 @@
             TextBoxResultElement1 = new TextBox();
             LabelResultElement1 = new Label();
             LabelTextResult = new Label();
+            PanelInputElement = new Panel();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
+            PanelInputElement.SuspendLayout();
             SuspendLayout();
             // 
             // MainPicture
@@ -127,16 +129,17 @@
             LabelDano.TabIndex = 6;
             LabelDano.Text = "Нам відомі: ";
             // 
-            // RadionButtonI
+            // RadioButtonI
             // 
-            RadionButtonI.AutoSize = true;
-            RadionButtonI.Location = new Point(750, 190);
-            RadionButtonI.Name = "RadionButtonI";
-            RadionButtonI.Size = new Size(97, 19);
-            RadionButtonI.TabIndex = 7;
-            RadionButtonI.TabStop = true;
-            RadionButtonI.Text = "Сили стриму";
-            RadionButtonI.UseVisualStyleBackColor = true;
+            RadioButtonI.AutoSize = true;
+            RadioButtonI.Location = new Point(750, 190);
+            RadioButtonI.Name = "RadioButtonI";
+            RadioButtonI.Size = new Size(97, 19);
+            RadioButtonI.TabIndex = 7;
+            RadioButtonI.TabStop = true;
+            RadioButtonI.Text = "Сили стриму";
+            RadioButtonI.UseVisualStyleBackColor = true;
+            RadioButtonI.CheckedChanged += RadioButtonI_CheckedChanged;
             // 
             // RadioButtonR
             // 
@@ -148,11 +151,12 @@
             RadioButtonR.TabStop = true;
             RadioButtonR.Text = "Опори резисторів";
             RadioButtonR.UseVisualStyleBackColor = true;
+            RadioButtonR.CheckedChanged += RadioButtonR_CheckedChanged;
             // 
             // LabelElement
             // 
             LabelElement.AutoSize = true;
-            LabelElement.Location = new Point(730, 260);
+            LabelElement.Location = new Point(0, 0);
             LabelElement.Name = "LabelElement";
             LabelElement.Size = new Size(182, 15);
             LabelElement.TabIndex = 9;
@@ -161,7 +165,7 @@
             // LabelElement1
             // 
             LabelElement1.AutoSize = true;
-            LabelElement1.Location = new Point(750, 300);
+            LabelElement1.Location = new Point(20, 40);
             LabelElement1.Name = "LabelElement1";
             LabelElement1.Size = new Size(48, 15);
             LabelElement1.TabIndex = 10;
@@ -169,7 +173,7 @@
             // 
             // TextBoxElement1
             // 
-            TextBoxElement1.Location = new Point(785, 296);
+            TextBoxElement1.Location = new Point(58, 36);
             TextBoxElement1.Name = "TextBoxElement1";
             TextBoxElement1.Size = new Size(100, 23);
             TextBoxElement1.TabIndex = 11;
@@ -177,7 +181,7 @@
             // LabelElement2
             // 
             LabelElement2.AutoSize = true;
-            LabelElement2.Location = new Point(750, 345);
+            LabelElement2.Location = new Point(20, 85);
             LabelElement2.Name = "LabelElement2";
             LabelElement2.Size = new Size(48, 15);
             LabelElement2.TabIndex = 12;
@@ -185,7 +189,7 @@
             // 
             // TextBoxElement2
             // 
-            TextBoxElement2.Location = new Point(785, 341);
+            TextBoxElement2.Location = new Point(58, 81);
             TextBoxElement2.Name = "TextBoxElement2";
             TextBoxElement2.Size = new Size(100, 23);
             TextBoxElement2.TabIndex = 13;
@@ -193,7 +197,7 @@
             // LabelElement3
             // 
             LabelElement3.AutoSize = true;
-            LabelElement3.Location = new Point(750, 390);
+            LabelElement3.Location = new Point(20, 130);
             LabelElement3.Name = "LabelElement3";
             LabelElement3.Size = new Size(48, 15);
             LabelElement3.TabIndex = 14;
@@ -201,7 +205,7 @@
             // 
             // TextBoxElement3
             // 
-            TextBoxElement3.Location = new Point(785, 386);
+            TextBoxElement3.Location = new Point(58, 126);
             TextBoxElement3.Name = "TextBoxElement3";
             TextBoxElement3.Size = new Size(100, 23);
             TextBoxElement3.TabIndex = 15;
@@ -214,6 +218,7 @@
             GetResult.TabIndex = 16;
             GetResult.Text = "Розрахувати";
             GetResult.UseVisualStyleBackColor = true;
+            GetResult.Click += GetResult_Click;
             // 
             // PanelResult
             // 
@@ -350,22 +355,30 @@
             LabelTextResult.TabIndex = 0;
             LabelTextResult.Text = "Результати розрахунку:";
             // 
+            // PanelInputElement
+            // 
+            PanelInputElement.Controls.Add(LabelElement);
+            PanelInputElement.Controls.Add(LabelElement1);
+            PanelInputElement.Controls.Add(TextBoxElement1);
+            PanelInputElement.Controls.Add(TextBoxElement3);
+            PanelInputElement.Controls.Add(LabelElement2);
+            PanelInputElement.Controls.Add(LabelElement3);
+            PanelInputElement.Controls.Add(TextBoxElement2);
+            PanelInputElement.Location = new Point(730, 260);
+            PanelInputElement.Name = "PanelInputElement";
+            PanelInputElement.Size = new Size(200, 158);
+            PanelInputElement.TabIndex = 18;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 481);
+            Controls.Add(PanelInputElement);
             Controls.Add(PanelResult);
             Controls.Add(GetResult);
-            Controls.Add(TextBoxElement3);
-            Controls.Add(LabelElement3);
-            Controls.Add(TextBoxElement2);
-            Controls.Add(LabelElement2);
-            Controls.Add(TextBoxElement1);
-            Controls.Add(LabelElement1);
-            Controls.Add(LabelElement);
             Controls.Add(RadioButtonR);
-            Controls.Add(RadionButtonI);
+            Controls.Add(RadioButtonI);
             Controls.Add(LabelDano);
             Controls.Add(TextBoxERS2);
             Controls.Add(LabelERS2);
@@ -378,6 +391,8 @@
             ((System.ComponentModel.ISupportInitialize)MainPicture).EndInit();
             PanelResult.ResumeLayout(false);
             PanelResult.PerformLayout();
+            PanelInputElement.ResumeLayout(false);
+            PanelInputElement.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -391,7 +406,7 @@
         private TextBox TextBoxERS2;
         private Label LabelERS2;
         private Label LabelDano;
-        private RadioButton RadionButtonI;
+        private RadioButton RadioButtonI;
         private RadioButton RadioButtonR;
         private Label LabelElement;
         private Label LabelElement1;
@@ -416,5 +431,6 @@
         private Label LabelOm3;
         private TextBox TextBoxResultOm2;
         private TextBox TextBoxResultOm3;
+        private Panel PanelInputElement;
     }
 }
