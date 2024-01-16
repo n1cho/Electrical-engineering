@@ -35,7 +35,7 @@
             TextBoxERS2 = new TextBox();
             LabelERS2 = new Label();
             LabelDano = new Label();
-            RadionButtonI = new RadioButton();
+            RadioButtonI = new RadioButton();
             RadioButtonR = new RadioButton();
             LabelElement = new Label();
             LabelElement1 = new Label();
@@ -46,22 +46,24 @@
             TextBoxElement3 = new TextBox();
             GetResult = new Button();
             PanelResult = new Panel();
-            LabelTextResult = new Label();
-            LabelResultElement1 = new Label();
-            TextBoxResultElement1 = new TextBox();
-            LabelResultElement2 = new Label();
-            TextBoxResultElement2 = new TextBox();
-            LabelResultElement3 = new Label();
-            TextBoxResultElement3 = new TextBox();
-            LabelTextOm = new Label();
-            LabelOm1 = new Label();
-            TextBoxResultOm1 = new TextBox();
-            LabelOm2 = new Label();
-            TextBoxResultOm2 = new TextBox();
-            LabelOm3 = new Label();
             TextBoxResultOm3 = new TextBox();
+            LabelOm3 = new Label();
+            TextBoxResultOm2 = new TextBox();
+            LabelOm2 = new Label();
+            TextBoxResultOm1 = new TextBox();
+            LabelOm1 = new Label();
+            LabelTextOm = new Label();
+            TextBoxResultElement3 = new TextBox();
+            LabelResultElement3 = new Label();
+            TextBoxResultElement2 = new TextBox();
+            LabelResultElement2 = new Label();
+            TextBoxResultElement1 = new TextBox();
+            LabelResultElement1 = new Label();
+            LabelTextResult = new Label();
+            PanelInputElement = new Panel();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
+            PanelInputElement.SuspendLayout();
             SuspendLayout();
             // 
             // MainPicture
@@ -73,6 +75,8 @@
             MainPicture.SizeMode = PictureBoxSizeMode.Zoom;
             MainPicture.TabIndex = 0;
             MainPicture.TabStop = false;
+            MainPicture.Paint += MainPicture_Paint;
+            MainPicture.MouseClick += MainPicture_MouseClick;
             // 
             // LabelElementERS
             // 
@@ -125,16 +129,17 @@
             LabelDano.TabIndex = 6;
             LabelDano.Text = "Нам відомі: ";
             // 
-            // RadionButtonI
+            // RadioButtonI
             // 
-            RadionButtonI.AutoSize = true;
-            RadionButtonI.Location = new Point(750, 190);
-            RadionButtonI.Name = "RadionButtonI";
-            RadionButtonI.Size = new Size(97, 19);
-            RadionButtonI.TabIndex = 7;
-            RadionButtonI.TabStop = true;
-            RadionButtonI.Text = "Сили стриму";
-            RadionButtonI.UseVisualStyleBackColor = true;
+            RadioButtonI.AutoSize = true;
+            RadioButtonI.Location = new Point(750, 190);
+            RadioButtonI.Name = "RadioButtonI";
+            RadioButtonI.Size = new Size(97, 19);
+            RadioButtonI.TabIndex = 7;
+            RadioButtonI.TabStop = true;
+            RadioButtonI.Text = "Сили стриму";
+            RadioButtonI.UseVisualStyleBackColor = true;
+            RadioButtonI.CheckedChanged += RadioButtonI_CheckedChanged;
             // 
             // RadioButtonR
             // 
@@ -146,11 +151,12 @@
             RadioButtonR.TabStop = true;
             RadioButtonR.Text = "Опори резисторів";
             RadioButtonR.UseVisualStyleBackColor = true;
+            RadioButtonR.CheckedChanged += RadioButtonR_CheckedChanged;
             // 
             // LabelElement
             // 
             LabelElement.AutoSize = true;
-            LabelElement.Location = new Point(730, 260);
+            LabelElement.Location = new Point(0, 0);
             LabelElement.Name = "LabelElement";
             LabelElement.Size = new Size(182, 15);
             LabelElement.TabIndex = 9;
@@ -159,7 +165,7 @@
             // LabelElement1
             // 
             LabelElement1.AutoSize = true;
-            LabelElement1.Location = new Point(750, 300);
+            LabelElement1.Location = new Point(20, 40);
             LabelElement1.Name = "LabelElement1";
             LabelElement1.Size = new Size(48, 15);
             LabelElement1.TabIndex = 10;
@@ -167,7 +173,7 @@
             // 
             // TextBoxElement1
             // 
-            TextBoxElement1.Location = new Point(785, 296);
+            TextBoxElement1.Location = new Point(58, 36);
             TextBoxElement1.Name = "TextBoxElement1";
             TextBoxElement1.Size = new Size(100, 23);
             TextBoxElement1.TabIndex = 11;
@@ -175,7 +181,7 @@
             // LabelElement2
             // 
             LabelElement2.AutoSize = true;
-            LabelElement2.Location = new Point(750, 345);
+            LabelElement2.Location = new Point(20, 85);
             LabelElement2.Name = "LabelElement2";
             LabelElement2.Size = new Size(48, 15);
             LabelElement2.TabIndex = 12;
@@ -183,7 +189,7 @@
             // 
             // TextBoxElement2
             // 
-            TextBoxElement2.Location = new Point(785, 341);
+            TextBoxElement2.Location = new Point(58, 81);
             TextBoxElement2.Name = "TextBoxElement2";
             TextBoxElement2.Size = new Size(100, 23);
             TextBoxElement2.TabIndex = 13;
@@ -191,7 +197,7 @@
             // LabelElement3
             // 
             LabelElement3.AutoSize = true;
-            LabelElement3.Location = new Point(750, 390);
+            LabelElement3.Location = new Point(20, 130);
             LabelElement3.Name = "LabelElement3";
             LabelElement3.Size = new Size(48, 15);
             LabelElement3.TabIndex = 14;
@@ -199,7 +205,7 @@
             // 
             // TextBoxElement3
             // 
-            TextBoxElement3.Location = new Point(785, 386);
+            TextBoxElement3.Location = new Point(58, 126);
             TextBoxElement3.Name = "TextBoxElement3";
             TextBoxElement3.Size = new Size(100, 23);
             TextBoxElement3.TabIndex = 15;
@@ -212,6 +218,7 @@
             GetResult.TabIndex = 16;
             GetResult.Text = "Розрахувати";
             GetResult.UseVisualStyleBackColor = true;
+            GetResult.Click += GetResult_Click;
             // 
             // PanelResult
             // 
@@ -234,103 +241,12 @@
             PanelResult.Size = new Size(220, 400);
             PanelResult.TabIndex = 17;
             // 
-            // LabelTextResult
+            // TextBoxResultOm3
             // 
-            LabelTextResult.AutoSize = true;
-            LabelTextResult.Location = new Point(0, 0);
-            LabelTextResult.Name = "LabelTextResult";
-            LabelTextResult.Size = new Size(136, 15);
-            LabelTextResult.TabIndex = 0;
-            LabelTextResult.Text = "Результати розрахунку:";
-            // 
-            // LabelResultElement1
-            // 
-            LabelResultElement1.AutoSize = true;
-            LabelResultElement1.Location = new Point(20, 40);
-            LabelResultElement1.Name = "LabelResultElement1";
-            LabelResultElement1.Size = new Size(48, 15);
-            LabelResultElement1.TabIndex = 1;
-            LabelResultElement1.Text = "I1/R1 = ";
-            // 
-            // TextBoxResultElement1
-            // 
-            TextBoxResultElement1.Location = new Point(60, 37);
-            TextBoxResultElement1.Name = "TextBoxResultElement1";
-            TextBoxResultElement1.Size = new Size(100, 23);
-            TextBoxResultElement1.TabIndex = 2;
-            // 
-            // LabelResultElement2
-            // 
-            LabelResultElement2.AutoSize = true;
-            LabelResultElement2.Location = new Point(20, 85);
-            LabelResultElement2.Name = "LabelResultElement2";
-            LabelResultElement2.Size = new Size(48, 15);
-            LabelResultElement2.TabIndex = 3;
-            LabelResultElement2.Text = "I2/R2 = ";
-            // 
-            // TextBoxResultElement2
-            // 
-            TextBoxResultElement2.Location = new Point(60, 82);
-            TextBoxResultElement2.Name = "TextBoxResultElement2";
-            TextBoxResultElement2.Size = new Size(100, 23);
-            TextBoxResultElement2.TabIndex = 4;
-            // 
-            // LabelResultElement3
-            // 
-            LabelResultElement3.AutoSize = true;
-            LabelResultElement3.Location = new Point(20, 130);
-            LabelResultElement3.Name = "LabelResultElement3";
-            LabelResultElement3.Size = new Size(48, 15);
-            LabelResultElement3.TabIndex = 5;
-            LabelResultElement3.Text = "I3/R3 = ";
-            // 
-            // TextBoxResultElement3
-            // 
-            TextBoxResultElement3.Location = new Point(60, 127);
-            TextBoxResultElement3.Name = "TextBoxResultElement3";
-            TextBoxResultElement3.Size = new Size(100, 23);
-            TextBoxResultElement3.TabIndex = 6;
-            // 
-            // LabelTextOm
-            // 
-            LabelTextOm.AutoSize = true;
-            LabelTextOm.Location = new Point(0, 170);
-            LabelTextOm.Name = "LabelTextOm";
-            LabelTextOm.Size = new Size(57, 15);
-            LabelTextOm.TabIndex = 7;
-            LabelTextOm.Text = "Напруги:";
-            // 
-            // LabelOm1
-            // 
-            LabelOm1.AutoSize = true;
-            LabelOm1.Location = new Point(20, 210);
-            LabelOm1.Name = "LabelOm1";
-            LabelOm1.Size = new Size(35, 15);
-            LabelOm1.TabIndex = 8;
-            LabelOm1.Text = "U1 = ";
-            // 
-            // TextBoxResultOm1
-            // 
-            TextBoxResultOm1.Location = new Point(60, 207);
-            TextBoxResultOm1.Name = "TextBoxResultOm1";
-            TextBoxResultOm1.Size = new Size(100, 23);
-            TextBoxResultOm1.TabIndex = 9;
-            // 
-            // LabelOm2
-            // 
-            LabelOm2.AutoSize = true;
-            LabelOm2.Location = new Point(20, 255);
-            LabelOm2.Name = "LabelOm2";
-            LabelOm2.Size = new Size(35, 15);
-            LabelOm2.TabIndex = 10;
-            LabelOm2.Text = "U2 = ";
-            // 
-            // TextBoxResultOm2
-            // 
-            TextBoxResultOm2.Location = new Point(60, 252);
-            TextBoxResultOm2.Name = "TextBoxResultOm2";
-            TextBoxResultOm2.Size = new Size(100, 23);
-            TextBoxResultOm2.TabIndex = 11;
+            TextBoxResultOm3.Location = new Point(60, 297);
+            TextBoxResultOm3.Name = "TextBoxResultOm3";
+            TextBoxResultOm3.Size = new Size(100, 23);
+            TextBoxResultOm3.TabIndex = 13;
             // 
             // LabelOm3
             // 
@@ -341,29 +257,128 @@
             LabelOm3.TabIndex = 12;
             LabelOm3.Text = "U3 = ";
             // 
-            // TextBoxResultOm3
+            // TextBoxResultOm2
             // 
-            TextBoxResultOm3.Location = new Point(60, 297);
-            TextBoxResultOm3.Name = "TextBoxResultOm3";
-            TextBoxResultOm3.Size = new Size(100, 23);
-            TextBoxResultOm3.TabIndex = 13;
+            TextBoxResultOm2.Location = new Point(60, 252);
+            TextBoxResultOm2.Name = "TextBoxResultOm2";
+            TextBoxResultOm2.Size = new Size(100, 23);
+            TextBoxResultOm2.TabIndex = 11;
+            // 
+            // LabelOm2
+            // 
+            LabelOm2.AutoSize = true;
+            LabelOm2.Location = new Point(20, 255);
+            LabelOm2.Name = "LabelOm2";
+            LabelOm2.Size = new Size(35, 15);
+            LabelOm2.TabIndex = 10;
+            LabelOm2.Text = "U2 = ";
+            // 
+            // TextBoxResultOm1
+            // 
+            TextBoxResultOm1.Location = new Point(60, 207);
+            TextBoxResultOm1.Name = "TextBoxResultOm1";
+            TextBoxResultOm1.Size = new Size(100, 23);
+            TextBoxResultOm1.TabIndex = 9;
+            // 
+            // LabelOm1
+            // 
+            LabelOm1.AutoSize = true;
+            LabelOm1.Location = new Point(20, 210);
+            LabelOm1.Name = "LabelOm1";
+            LabelOm1.Size = new Size(35, 15);
+            LabelOm1.TabIndex = 8;
+            LabelOm1.Text = "U1 = ";
+            // 
+            // LabelTextOm
+            // 
+            LabelTextOm.AutoSize = true;
+            LabelTextOm.Location = new Point(0, 170);
+            LabelTextOm.Name = "LabelTextOm";
+            LabelTextOm.Size = new Size(57, 15);
+            LabelTextOm.TabIndex = 7;
+            LabelTextOm.Text = "Напруги:";
+            // 
+            // TextBoxResultElement3
+            // 
+            TextBoxResultElement3.Location = new Point(60, 127);
+            TextBoxResultElement3.Name = "TextBoxResultElement3";
+            TextBoxResultElement3.Size = new Size(100, 23);
+            TextBoxResultElement3.TabIndex = 6;
+            // 
+            // LabelResultElement3
+            // 
+            LabelResultElement3.AutoSize = true;
+            LabelResultElement3.Location = new Point(20, 130);
+            LabelResultElement3.Name = "LabelResultElement3";
+            LabelResultElement3.Size = new Size(48, 15);
+            LabelResultElement3.TabIndex = 5;
+            LabelResultElement3.Text = "I3/R3 = ";
+            // 
+            // TextBoxResultElement2
+            // 
+            TextBoxResultElement2.Location = new Point(60, 82);
+            TextBoxResultElement2.Name = "TextBoxResultElement2";
+            TextBoxResultElement2.Size = new Size(100, 23);
+            TextBoxResultElement2.TabIndex = 4;
+            // 
+            // LabelResultElement2
+            // 
+            LabelResultElement2.AutoSize = true;
+            LabelResultElement2.Location = new Point(20, 85);
+            LabelResultElement2.Name = "LabelResultElement2";
+            LabelResultElement2.Size = new Size(48, 15);
+            LabelResultElement2.TabIndex = 3;
+            LabelResultElement2.Text = "I2/R2 = ";
+            // 
+            // TextBoxResultElement1
+            // 
+            TextBoxResultElement1.Location = new Point(60, 37);
+            TextBoxResultElement1.Name = "TextBoxResultElement1";
+            TextBoxResultElement1.Size = new Size(100, 23);
+            TextBoxResultElement1.TabIndex = 2;
+            // 
+            // LabelResultElement1
+            // 
+            LabelResultElement1.AutoSize = true;
+            LabelResultElement1.Location = new Point(20, 40);
+            LabelResultElement1.Name = "LabelResultElement1";
+            LabelResultElement1.Size = new Size(48, 15);
+            LabelResultElement1.TabIndex = 1;
+            LabelResultElement1.Text = "I1/R1 = ";
+            // 
+            // LabelTextResult
+            // 
+            LabelTextResult.AutoSize = true;
+            LabelTextResult.Location = new Point(0, 0);
+            LabelTextResult.Name = "LabelTextResult";
+            LabelTextResult.Size = new Size(136, 15);
+            LabelTextResult.TabIndex = 0;
+            LabelTextResult.Text = "Результати розрахунку:";
+            // 
+            // PanelInputElement
+            // 
+            PanelInputElement.Controls.Add(LabelElement);
+            PanelInputElement.Controls.Add(LabelElement1);
+            PanelInputElement.Controls.Add(TextBoxElement1);
+            PanelInputElement.Controls.Add(TextBoxElement3);
+            PanelInputElement.Controls.Add(LabelElement2);
+            PanelInputElement.Controls.Add(LabelElement3);
+            PanelInputElement.Controls.Add(TextBoxElement2);
+            PanelInputElement.Location = new Point(730, 260);
+            PanelInputElement.Name = "PanelInputElement";
+            PanelInputElement.Size = new Size(200, 158);
+            PanelInputElement.TabIndex = 18;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1184, 481);
+            Controls.Add(PanelInputElement);
             Controls.Add(PanelResult);
             Controls.Add(GetResult);
-            Controls.Add(TextBoxElement3);
-            Controls.Add(LabelElement3);
-            Controls.Add(TextBoxElement2);
-            Controls.Add(LabelElement2);
-            Controls.Add(TextBoxElement1);
-            Controls.Add(LabelElement1);
-            Controls.Add(LabelElement);
             Controls.Add(RadioButtonR);
-            Controls.Add(RadionButtonI);
+            Controls.Add(RadioButtonI);
             Controls.Add(LabelDano);
             Controls.Add(TextBoxERS2);
             Controls.Add(LabelERS2);
@@ -376,6 +391,8 @@
             ((System.ComponentModel.ISupportInitialize)MainPicture).EndInit();
             PanelResult.ResumeLayout(false);
             PanelResult.PerformLayout();
+            PanelInputElement.ResumeLayout(false);
+            PanelInputElement.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -389,7 +406,7 @@
         private TextBox TextBoxERS2;
         private Label LabelERS2;
         private Label LabelDano;
-        private RadioButton RadionButtonI;
+        private RadioButton RadioButtonI;
         private RadioButton RadioButtonR;
         private Label LabelElement;
         private Label LabelElement1;
@@ -414,5 +431,6 @@
         private Label LabelOm3;
         private TextBox TextBoxResultOm2;
         private TextBox TextBoxResultOm3;
+        private Panel PanelInputElement;
     }
 }
