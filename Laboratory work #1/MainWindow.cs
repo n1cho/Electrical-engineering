@@ -6,13 +6,13 @@ namespace Laboratory_work__1
         bool[] Switches = { false, false, false, false, false, false, false };
         double[,] Result = new double[3, 3];
         int[,,] Coordinates = { // { start, on, off }
-            { { 128, 130 },{ 110, 157 }, { 140, 157 } }, // Coordinates switch SA1
-            { { 500, 130 },{ 520, 157 }, { 490, 157 } }, // Coordinates switch SA2
-            { { 330, 108 },{ 330, 130 }, { 340, 130 } }, // Coordinates switch SA3
-            { { 376, 225 },{ 376, 195 }, { 365, 195 } }, // Coordinates switch On/Off R3
-            { { 208, 28 },{ 235, 28 }, { 235, 18 } }, // Coordinates switch On/Off R1
-            { { 210, 364 },{ 180, 364 }, { 180, 354 } }, // Coordinates switch On/Off Left site shem
-            { { 422, 364 },{ 455, 364 }, { 455, 354 } } // Coordinates switch On/Off Right site shem
+            { { 127, 120 },{ 110, 150 }, { 140, 150 } }, // Coordinates switch SA1
+            { { 523, 120 },{ 540, 150 }, { 510, 150 } }, // Coordinates switch SA2
+            { { 415, 126 },{ 415, 97 }, { 405, 100 } }, // Coordinates switch SA3
+            { { 465, 220 },{ 465, 190 }, { 455, 190 } }, // Coordinates switch On/Off R3
+            { { 315, 11 },{ 345, 11 }, { 345, 20 } }, // Coordinates switch On/Off R1
+            { { 343, 370 },{ 318, 370 }, { 320, 360 } }, // Coordinates switch On/Off Left site shem
+            { { 480, 370 },{ 505, 370 }, { 505, 360 } } // Coordinates switch On/Off Right site shem
         };
         int Range = 25;
 
@@ -45,7 +45,7 @@ namespace Laboratory_work__1
             }
             else
             {
-                Graphic.DrawLine(Pens.Black, Coordinates[0, 0, 0], Coordinates[0, 0, 0],
+                Graphic.DrawLine(Pens.Black, Coordinates[0, 0, 0], Coordinates[0, 0, 1],
                     Coordinates[0, 2, 0], Coordinates[0, 2, 1]);
                 TextBoxERS1.ReadOnly = true;
             }
