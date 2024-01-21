@@ -1,3 +1,5 @@
+using Audits;
+
 namespace Laboratory_work__1
 {
     public partial class MainWindow : Form
@@ -18,6 +20,7 @@ namespace Laboratory_work__1
 
         Graphics Graphic;
         Point Coordinates_Click;
+        Audit Audit = new Audit();
 
         public MainWindow()
         {
@@ -167,6 +170,19 @@ namespace Laboratory_work__1
         private void GetResult_Click(object sender, EventArgs e)
         {
             PanelResult.Visible = true;
+            TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3 };
+            TextBox[] TextBoxesResult = {TextBoxResultElement1, TextBoxResultElement2, TextBoxResultElement3,
+                    TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
+            
+            Data = Audit.CheckInput(TextBoxesInput);
+            
+            Result = Audit.CheckShem(Switches,Data);
+            
+            for (int i = 0; i<3;i++)
+            {
+                TextBoxesResult[i].Text = Convert.ToString(Result[0,i]);
+                TextBoxesResult[i+3].Text = Convert.ToString(Result[1, i]);
+            }
         }
     }
 }
