@@ -5,7 +5,7 @@ namespace Audits
     public class Audit
     {
         Calculation Calculation = new Calculation();
-        public double[,] CheckShem(bool[] Switches, double[,] data)
+        public double[,] CheckShem(bool[] Switches, double[,] data, char Type)
         {
             double[,] result = new double[3, 3];
 
@@ -13,29 +13,41 @@ namespace Audits
             {
                 if (Switches[0] && Switches[1] && Switches[2])
                 {
-                    result = Calculation.CalcOnAllERSR(data);
+                    if (Type == 'r')
+                    {
+                        result = Calculation.CalcOnAllERSI(data);
+                    }
                 }
             }
 
             return result;
         }
 
-        public double[,] CheckInput(TextBox[] TextBoxes)
+        public double[,] CheckInput(TextBox[] TextBoxes, char Type)
         {
             double[,] data = new double[2, 3];
+            string[] elements = { "E1", "E2", "1", "2", "3" };
             string result = "";
             int index = 0;
 
             for (int i = 0;i < 5; i++)
             {
-                if (TextBoxes[i].Text == "")
+                if (!TextBoxes[i].ReadOnly && TextBoxes[i].Text == "")
                 {
-                    result = "Не заповнені всі значення елементів";
+                    if (i > 1)
+                    {
+                        result = "Не заповнено значення ";
+                        if (Type == 'i') { result += "I" + elements[i]; } else { result += "R" + elements[i]; }
+                    }
+                    else
+                    {
+                        result = "Не заповненно значення " + elements[i];
+                    }
                     MessageBox.Show(result, "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 }
             }
-            
+
             if (result == "")
             {
                 for (int i = 0; i < 2; i++)
@@ -48,8 +60,10 @@ namespace Audits
                         }
                         else
                         {
-
-                            data[i,j] = Convert.ToDouble(TextBoxes[index].Text);
+                            if (TextBoxes[index].Text != "")
+                            {
+                                data[i, j] = Convert.ToDouble(TextBoxes[index].Text);
+                            }
                             index++;
                         }
                     }

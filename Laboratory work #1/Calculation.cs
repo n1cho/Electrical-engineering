@@ -2,7 +2,7 @@
 {
     public class Calculation
     {
-        public double[,] CalcOnAllERSR(double[,] data)
+        public double[,] CalcOnAllERSI(double[,] data)
         {
             double[,] result = new double[3, 3];
             
