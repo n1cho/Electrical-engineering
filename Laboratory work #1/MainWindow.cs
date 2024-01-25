@@ -180,7 +180,7 @@ namespace Laboratory_work__1
                     TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
 
                 Data = Audit.CheckInput(TextBoxesInput, Type);
-
+                
                 Result = Audit.CheckShem(Switches, Data, Type);
 
                 for (int i = 0; i < 3; i++)

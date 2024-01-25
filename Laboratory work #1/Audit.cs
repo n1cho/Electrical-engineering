@@ -16,6 +16,15 @@ namespace Audits
                     if (Type == 'r')
                     {
                         result = Calculation.CalcOnAllERSI(data);
+                    } else if (Type == 'i')
+                    {
+                        if (Math.Round(data[1, 0] - data[1, 1] - data[1, 2], 0, MidpointRounding.AwayFromZero) == 0)
+                        {
+                            result = Calculation.CalcOnAllERSR(data);
+                        } else
+                        {
+                            MessageBox.Show("Сума струмів має бути рівна нулю", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
