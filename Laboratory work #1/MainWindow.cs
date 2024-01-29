@@ -1,4 +1,5 @@
 using Audits;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Laboratory_work__1
 {
@@ -146,6 +147,7 @@ namespace Laboratory_work__1
             PanelInputElement.Visible = true;
             if (RadioButtonI.Checked)
             {
+                LabelElement.Text = "Струми:";
                 LabelElement1.Text = "I1 = ";
                 LabelElement2.Text = "I2 = ";
                 LabelElement3.Text = "I3 = ";
@@ -161,6 +163,7 @@ namespace Laboratory_work__1
             PanelInputElement.Visible = true;
             if (RadioButtonR.Checked)
             {
+                LabelElement.Text = "Опори:";
                 LabelElement1.Text = "R1 = ";
                 LabelElement2.Text = "R2 = ";
                 LabelElement3.Text = "R3 = ";
@@ -178,9 +181,13 @@ namespace Laboratory_work__1
                 TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3 };
                 TextBox[] TextBoxesResult = {TextBoxResultElement1, TextBoxResultElement2, TextBoxResultElement3,
                     TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
+                Label[] LabelResult = {LabelTextResult, LabelResultElement1, LabelResultElement2,
+                    LabelResultElement3, LabelTextOm, LabelOm1, LabelOm2, LabelOm3};
 
                 Data = Audit.CheckInput(TextBoxesInput, Type);
-                
+
+                CheckShortCircuit(TextBoxesResult, LabelResult);
+
                 Result = Audit.CheckShem(Switches, Data, Type);
 
                 for (int i = 0; i < 3; i++)
@@ -191,6 +198,35 @@ namespace Laboratory_work__1
             } else
             {
                 MessageBox.Show("Ви не вибрали заданий елемент", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void CheckShortCircuit(TextBox[] TextBoxesResult, Label[] LabelResult)
+        {
+            if (Switches[3])
+            {
+                LabelTextResult.Text = "Коротке замикання: ";
+                LabelResultElement1.Text = "Ikz = ";
+                LabelResultElement2.Text = "Uxx = ";
+                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
+            } else if (!Switches[3])
+            {
+                LabelTextResult.Text = "Результати розрахунку: ";
+                if (Type == 'i') { RadioButtonI.Checked = false; RadioButtonI.Checked = true; } 
+                else if (Type == 'r') { RadioButtonR.Checked = false; RadioButtonR.Checked = true; }
+                OnOffVisibleResult(true, TextBoxesResult, LabelResult);
+            }
+        }
+
+        private void OnOffVisibleResult(bool OnOff, TextBox[] TextBoxesResult, Label[] LabelResult)
+        {
+            for (int i = 2; i < 6; i++)
+            {
+                TextBoxesResult[i].Visible = OnOff;
+            }
+            for (int i = 3; i < 8; i++)
+            {
+                LabelResult[i].Visible = OnOff;
             }
         }
     }

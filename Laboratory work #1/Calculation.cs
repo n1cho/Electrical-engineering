@@ -52,5 +52,20 @@
             result[1, 2] = Math.Round(result[0, 2] * data[1, 2], 4, MidpointRounding.AwayFromZero);
             return result;
         }
+
+        public double[,] CalcShortCircuit(double[,] data, double[,] result_element, char type)
+        {
+            double[,] result = new double[3,3];
+            if (type == 'i')
+            {
+                result[0, 0] = Math.Round(data[1, 0] + data[1, 1], 4, MidpointRounding.AwayFromZero);
+            } else
+            {
+                result[0, 0] = Math.Round(result_element[0, 0] + result_element[0, 1], 4, MidpointRounding.AwayFromZero);
+            }
+        
+            result[0, 1] = Math.Round(data[0, 1] + data[1, 0] * result_element[0, 0], 4, MidpointRounding.AwayFromZero);
+            return result;
+        }
     } 
 }

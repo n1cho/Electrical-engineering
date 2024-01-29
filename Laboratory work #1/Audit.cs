@@ -11,8 +11,13 @@ namespace Audits
 
             if (Switches[5] && Switches[6])
             {
-                if (Switches[0] && Switches[1] && Switches[2])
+                if (Switches[2])
                 {
+                    if (Switches[0] || Switches[1])
+                    {
+                        if (!Switches[0]) { data[0, 0] = 0; } else if (!Switches[1]) { data[0, 1] = 0; }
+                    }
+                    
                     if (Type == 'r')
                     {
                         result = Calculation.CalcOnAllERSI(data);
@@ -25,6 +30,11 @@ namespace Audits
                         {
                             MessageBox.Show("Сума струмів має бути рівна нулю", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                    }
+
+                    if (Switches[3])
+                    {
+                        result = Calculation.CalcShortCircuit(data, result, Type);
                     }
                 }
             }
