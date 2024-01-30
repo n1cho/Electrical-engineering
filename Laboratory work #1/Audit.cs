@@ -36,6 +36,24 @@ namespace Audits
                     {
                         result = Calculation.CalcShortCircuit(data, result, Type);
                     }
+                } else if (Switches[0] && !Switches[1] && !Switches[2])
+                {
+                    if (Switches[4])
+                    {
+                        if (Type == 'r') { result = Calculation.CalcVariousSupports(data, 1); }
+                    }
+                }
+            } else if (Switches[5] && !Switches[6])
+            {
+                if (Switches[0] && !Switches[1] && Switches[2])
+                {
+                    if (Switches[3])
+                    {
+                        if (Type == 'r') { result = Calculation.CalcVariousSupports(data, 0); }
+                    } else if (!Switches[3])
+                    {
+                        if (Type == 'r') { result = Calculation.CalcVariousSupports(data, 2); }
+                    }
                 }
             }
 

@@ -20,7 +20,7 @@ namespace Laboratory_work__1
         int Range = 25;
         char Type;
 
-        Graphics Graphic;
+        Graphics ? Graphic;
         Point Coordinates_Click;
         Audit Audit = new Audit();
 
@@ -70,13 +70,11 @@ namespace Laboratory_work__1
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[2, 0, 0], Coordinates[2, 0, 1],
                     Coordinates[2, 1, 0], Coordinates[2, 1, 1]);
-                TextBoxElement3.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[2, 0, 0], Coordinates[2, 0, 1],
                     Coordinates[2, 2, 0], Coordinates[2, 2, 1]);
-                TextBoxElement3.ReadOnly = true;
             }
             if (Switches[3]) // Switch On/Off R3
             {
@@ -121,6 +119,23 @@ namespace Laboratory_work__1
                 Graphic.DrawLine(Pens.Black, Coordinates[6, 0, 0], Coordinates[6, 0, 1],
                     Coordinates[6, 2, 0], Coordinates[6, 2, 1]);
                 TextBoxElement2.ReadOnly = true;
+            }
+            
+            if (Switches[2] && !Switches[3])
+            {
+                TextBoxElement3.ReadOnly = false;
+            }
+            else
+            {
+                TextBoxElement3.ReadOnly = true;
+            }
+            if (Switches[0] && !Switches[4])
+            {
+                TextBoxElement1.ReadOnly = false;
+            }
+            else
+            {
+                TextBoxElement1.ReadOnly = true;
             }
         }
 
@@ -203,11 +218,29 @@ namespace Laboratory_work__1
 
         private void CheckShortCircuit(TextBox[] TextBoxesResult, Label[] LabelResult)
         {
-            if (Switches[3])
+            if (Switches[3] || Switches[4])
             {
-                LabelTextResult.Text = "Коротке замикання: ";
-                LabelResultElement1.Text = "Ikz = ";
-                LabelResultElement2.Text = "Uxx = ";
+                if (!Switches[6] && Switches[3])
+                {
+                    LabelResultElement1.Text = "Pw = ";
+                    LabelResultElement2.Text = "Ur1 = ";
+                }
+                else if (Switches[3])
+                {
+                    LabelTextResult.Text = "Коротке замикання: ";
+                    LabelResultElement1.Text = "Ikz = ";
+                    LabelResultElement2.Text = "Uxx = ";
+                }
+                else if (Switches[4] && Switches[6])
+                {
+                    LabelResultElement1.Text = "Pw = ";
+                    LabelResultElement2.Text = "Ur2 = ";
+                }
+                else if (Switches[4] && !Switches[6])
+                {
+                    LabelResultElement1.Text = "Pw = ";
+                    LabelResultElement2.Text = "Ur3 = ";
+                }
                 OnOffVisibleResult(false, TextBoxesResult, LabelResult);
             } else if (!Switches[3])
             {

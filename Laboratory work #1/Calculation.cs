@@ -67,5 +67,14 @@
             result[0, 1] = Math.Round(data[0, 1] + data[1, 0] * result_element[0, 0], 4, MidpointRounding.AwayFromZero);
             return result;
         }
+
+        public double[,] CalcVariousSupports(double[,] data, int Element)
+        {
+            double[,] result = new double[3, 3];
+            double current = data[0, 0] / data[1, Element];
+            result[0, 0] = Math.Pow(current, 2) * data[1, Element];
+            result[0, 1] = current * data[1, Element];
+            return result;
+        }
     } 
 }
