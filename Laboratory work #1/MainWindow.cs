@@ -224,6 +224,7 @@ namespace Laboratory_work__1
                 LabelResult[0].Text = "Коротке замикання: ";
                 LabelResult[2].Text = "Ikz = ";
                 LabelResult[3].Text = "Uxx = ";
+                LabelResult[1].Visible = false;
                 OnOffVisibleResult(false, TextBoxesResult, LabelResult);
             }
             else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
@@ -243,6 +244,7 @@ namespace Laboratory_work__1
                 if (Type == 'i') { RadioButtonI.Checked = false; RadioButtonI.Checked = true; }
                 else if (Type == 'r') { RadioButtonR.Checked = false; RadioButtonR.Checked = true; }
                 LabelResult[0].Text = "Результати розрахунку: ";
+                LabelResult[1].Visible = true;
                 OnOffVisibleResult(true, TextBoxesResult, LabelResult);
             }
         }
