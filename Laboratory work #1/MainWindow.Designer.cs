@@ -71,8 +71,8 @@
             MainPicture.Image = Properties.Resources.main_picture_shem;
             MainPicture.Location = new Point(32, 12);
             MainPicture.Name = "MainPicture";
-            MainPicture.Size = new Size(640, 400);
-            MainPicture.SizeMode = PictureBoxSizeMode.Zoom;
+            MainPicture.Size = new Size(657, 380);
+            MainPicture.SizeMode = PictureBoxSizeMode.AutoSize;
             MainPicture.TabIndex = 0;
             MainPicture.TabStop = false;
             MainPicture.Paint += MainPicture_Paint;
@@ -245,6 +245,7 @@
             // 
             TextBoxResultOm3.Location = new Point(60, 297);
             TextBoxResultOm3.Name = "TextBoxResultOm3";
+            TextBoxResultOm3.ReadOnly = true;
             TextBoxResultOm3.Size = new Size(100, 23);
             TextBoxResultOm3.TabIndex = 13;
             // 
@@ -261,6 +262,7 @@
             // 
             TextBoxResultOm2.Location = new Point(60, 252);
             TextBoxResultOm2.Name = "TextBoxResultOm2";
+            TextBoxResultOm2.ReadOnly = true;
             TextBoxResultOm2.Size = new Size(100, 23);
             TextBoxResultOm2.TabIndex = 11;
             // 
@@ -277,6 +279,7 @@
             // 
             TextBoxResultOm1.Location = new Point(60, 207);
             TextBoxResultOm1.Name = "TextBoxResultOm1";
+            TextBoxResultOm1.ReadOnly = true;
             TextBoxResultOm1.Size = new Size(100, 23);
             TextBoxResultOm1.TabIndex = 9;
             // 
@@ -302,6 +305,7 @@
             // 
             TextBoxResultElement3.Location = new Point(60, 127);
             TextBoxResultElement3.Name = "TextBoxResultElement3";
+            TextBoxResultElement3.ReadOnly = true;
             TextBoxResultElement3.Size = new Size(100, 23);
             TextBoxResultElement3.TabIndex = 6;
             // 
@@ -318,6 +322,7 @@
             // 
             TextBoxResultElement2.Location = new Point(60, 82);
             TextBoxResultElement2.Name = "TextBoxResultElement2";
+            TextBoxResultElement2.ReadOnly = true;
             TextBoxResultElement2.Size = new Size(100, 23);
             TextBoxResultElement2.TabIndex = 4;
             // 
@@ -334,6 +339,7 @@
             // 
             TextBoxResultElement1.Location = new Point(60, 37);
             TextBoxResultElement1.Name = "TextBoxResultElement1";
+            TextBoxResultElement1.ReadOnly = true;
             TextBoxResultElement1.Size = new Size(100, 23);
             TextBoxResultElement1.TabIndex = 2;
             // 
