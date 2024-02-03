@@ -19,6 +19,7 @@ namespace Laboratory_work__1
         };
         int Range = 25;
         char Type;
+        string TypeShem = String.Empty;
 
         Graphics ? Graphic;
         Point Coordinates_Click;
@@ -196,70 +197,66 @@ namespace Laboratory_work__1
                 TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3 };
                 TextBox[] TextBoxesResult = {TextBoxResultElement1, TextBoxResultElement2, TextBoxResultElement3,
                     TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
-                Label[] LabelResult = {LabelTextResult, LabelResultElement1, LabelResultElement2,
-                    LabelResultElement3, LabelTextOm, LabelOm1, LabelOm2, LabelOm3};
+                Label[] LabelResult = {LabelTextResult, LabelTextOm,LabelResultElement1, LabelResultElement2,
+                    LabelResultElement3, LabelOm1, LabelOm2, LabelOm3};
 
                 Data = Audit.CheckInput(TextBoxesInput, Type);
 
-                CheckShortCircuit(TextBoxesResult, LabelResult);
+                TypeShem = Audit.CheckShem(Switches);
 
-                Result = Audit.CheckShem(Switches, Data, Type);
+                Result = Audit.GetResult(TypeShem, Data, Type);
 
                 for (int i = 0; i < 3; i++)
                 {
                     TextBoxesResult[i].Text = Convert.ToString(Result[0, i]);
                     TextBoxesResult[i + 3].Text = Convert.ToString(Result[1, i]);
                 }
+                CheckVisibleShemResult(TypeShem, TextBoxesResult, LabelResult, Type);
             } else
             {
                 MessageBox.Show("Ви не вибрали заданий елемент", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void CheckShortCircuit(TextBox[] TextBoxesResult, Label[] LabelResult)
+        private void CheckVisibleShemResult(string TypeShem, TextBox[] TextBoxesResult, Label[] LabelResult, char Type)
         {
-            if (Switches[3] || Switches[4])
-            {
-                if (!Switches[6] && Switches[3])
-                {
-                    LabelResultElement1.Text = "Pw = ";
-                    LabelResultElement2.Text = "Ur1 = ";
-                }
-                else if (Switches[3])
-                {
-                    LabelTextResult.Text = "Коротке замикання: ";
-                    LabelResultElement1.Text = "Ikz = ";
-                    LabelResultElement2.Text = "Uxx = ";
-                }
-                else if (Switches[4] && Switches[6])
-                {
-                    LabelResultElement1.Text = "Pw = ";
-                    LabelResultElement2.Text = "Ur2 = ";
-                }
-                else if (Switches[4] && !Switches[6])
-                {
-                    LabelResultElement1.Text = "Pw = ";
-                    LabelResultElement2.Text = "Ur3 = ";
-                }
+            if (TypeShem == "ShortCircuit") {
+                LabelResult[0].Text = "Коротке замикання: ";
+                LabelResult[2].Text = "Ikz = ";
+                LabelResult[3].Text = "Uxx = ";
                 OnOffVisibleResult(false, TextBoxesResult, LabelResult);
-            } else if (!Switches[3])
+            }
+            else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
+                TypeShem == "VariousSupportsR1R2" || TypeShem == "VariousSupportsR1R3" || TypeShem == "VariousSupportsR2R3")
             {
-                LabelTextResult.Text = "Результати розрахунку: ";
-                if (Type == 'i') { RadioButtonI.Checked = false; RadioButtonI.Checked = true; } 
+                LabelResult[2].Text = "Pw = ";
+                if (TypeShem == "VariousSupportsR1") { LabelResult[5].Text = "Ur1 = "; }
+                else if (TypeShem == "VariousSupportsR2") { LabelResult[6].Text = "Ur2 = "; }
+                else if (TypeShem == "VariousSupportsR3") { LabelResult[7].Text = "Ur3 = "; }
+                else if (TypeShem == "VariousSupportsR1R2") { LabelResult[5].Text = "Ur1 = "; LabelResult[6].Text = "Ur2 = "; }
+                else if (TypeShem == "VariousSupportsR1R3") { LabelResult[5].Text = "Ur1 = "; LabelResult[7].Text = "Ur3 = "; }
+                else if (TypeShem == "VariousSupportsR2R3") { LabelResult[6].Text = "Ur2 = "; LabelResult[7].Text = "Ur3 = "; }
+                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
+            }
+            else
+            {
+                if (Type == 'i') { RadioButtonI.Checked = false; RadioButtonI.Checked = true; }
                 else if (Type == 'r') { RadioButtonR.Checked = false; RadioButtonR.Checked = true; }
+                LabelResult[0].Text = "Результати розрахунку: ";
                 OnOffVisibleResult(true, TextBoxesResult, LabelResult);
             }
         }
 
         private void OnOffVisibleResult(bool OnOff, TextBox[] TextBoxesResult, Label[] LabelResult)
         {
-            for (int i = 2; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                TextBoxesResult[i].Visible = OnOff;
-            }
-            for (int i = 3; i < 8; i++)
-            {
-                LabelResult[i].Visible = OnOff;
+                if (TextBoxesResult[i].Text == "0" && !OnOff) 
+                { 
+                    TextBoxesResult[i].Visible = false;
+                    LabelResult[i + 2].Visible = false;
+                }
+                else { TextBoxesResult[i].Visible = true; LabelResult[i + 2].Visible = true; }
             }
         }
     }
