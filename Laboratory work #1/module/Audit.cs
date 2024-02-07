@@ -12,19 +12,26 @@ namespace Audits
             {
                 if (Switches[2])
                 {
-                    if (Switches[0] && Switches[1]) {
-                        if (Switches[3]) { result = "ShortCircuit"; } else { result = "DefaultAllERS"; }
+                    if (Switches[0] && Switches[1]) { 
+                        if (!Switches[3] && !Switches[4]) { result = "DefaultAllERS"; }  
+                        else if (Switches[3] && !Switches[4]) { result = "ShortCircuitIkz"; }
                     }
                     else if (Switches[0] && !Switches[1])
                     {
                         if (Switches[4] && !Switches[3]) { result = "VariousSupportsR2R3"; }
-                        else if (Switches[4] && Switches[3]) { result = "VariousSupportsR2"; }
                         else { result = "DefaultERS1"; }
                     }
                     else if (!Switches[0] && Switches[1]) { result = "DefaultERS2"; }
-                } else if (!Switches[2] && !Switches[1])
+                } else if (!Switches[2])
                 {
-                    if (Switches[0] && !Switches[4] && !Switches[3]) { result = "VariousSupportsR1R2"; }
+                    if (Switches[0] && !Switches[1])
+                    {
+                        if (!Switches[4] && !Switches[3]) { result = "VariousSupportsR1R2"; }
+                        else if (Switches[4] && !Switches[3]) { result = "VariousSupportsR2"; }
+                    } else if (Switches[0] && Switches[1])
+                    {
+                        if (!Switches[3] && !Switches[4]) { result = "ShortCircuitUxx"; }
+                    }
                 }
             } else if (Switches[5] && !Switches[6])
             {
@@ -61,12 +68,10 @@ namespace Audits
                     }
                 }
                 else if (Type == 'r') { result = Calculation.CalcOnAllERSI(data); }
-            } else if (TypeShem == "ShortCircuit")
-            {
-                data[1, 2] = 0;
-                result = GetResult("DefaultAllERS", data, Type);
-                result = Calculation.CalcShortCircuit(data, result, Type);
-            } else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
+            } 
+            else if (TypeShem == "ShortCircuitUxx") { result = Calculation.CalcShortCircuit(data,0); } 
+            else if (TypeShem == "ShortCircuitIkz") { result = Calculation.CalcShortCircuit(data, 1); }
+            else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
                 TypeShem == "VariousSupportsR1R2" ||  TypeShem == "VariousSupportsR1R3" || TypeShem == "VariousSupportsR2R3")
             {
                 if (Type == 'r')

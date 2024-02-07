@@ -53,18 +53,17 @@
             return result;
         }
 
-        public double[,] CalcShortCircuit(double[,] data, double[,] result_element, char type)
+        public double[,] CalcShortCircuit(double[,] data, int type)
         {
             double[,] result = new double[3,3];
-            if (type == 'i')
+            if (type == 0)
             {
-                result[0, 0] = Math.Round(data[1, 0] + data[1, 1], 4, MidpointRounding.AwayFromZero);
-            } else
+                double current = (data[0, 0] - data[0, 1]) / (data[1, 0] + data[1, 1]);
+                result[0, 0] = (data[0, 0] - current * data[1, 0]);
+            } else if (type == 1)
             {
-                result[0, 0] = Math.Round(result_element[0, 0] + result_element[0, 1], 4, MidpointRounding.AwayFromZero);
+                result[0, 0] = (data[0, 0] / data[1, 0]) + (data[0, 1] / data[1, 1]);
             }
-        
-            result[0, 1] = Math.Round(data[0, 1] + data[1, 0] * result_element[0, 0], 4, MidpointRounding.AwayFromZero);
             return result;
         }
 

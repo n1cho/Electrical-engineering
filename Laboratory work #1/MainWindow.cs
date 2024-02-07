@@ -101,13 +101,11 @@ namespace Laboratory_work__1
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 1, 0], Coordinates[5, 1, 1]);
-                TextBoxElement1.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 2, 0], Coordinates[5, 2, 1]);
-                TextBoxElement1.ReadOnly = true;
             }
             if (Switches[6]) // Switch On/Off Right site shem
             {
@@ -130,11 +128,11 @@ namespace Laboratory_work__1
             {
                 TextBoxElement3.ReadOnly = true;
             }
-            if (Switches[0] && !Switches[4])
+
+            if (Switches[5] && !Switches[4])
             {
                 TextBoxElement1.ReadOnly = false;
-            }
-            else
+            } else
             {
                 TextBoxElement1.ReadOnly = true;
             }
@@ -220,14 +218,7 @@ namespace Laboratory_work__1
 
         private void CheckVisibleShemResult(string TypeShem, TextBox[] TextBoxesResult, Label[] LabelResult, char Type)
         {
-            if (TypeShem == "ShortCircuit") {
-                LabelResult[0].Text = "Коротке замикання: ";
-                LabelResult[2].Text = "Ikz = ";
-                LabelResult[3].Text = "Uxx = ";
-                LabelResult[1].Visible = false;
-                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
-            }
-            else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
+            if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
                 TypeShem == "VariousSupportsR1R2" || TypeShem == "VariousSupportsR1R3" || TypeShem == "VariousSupportsR2R3")
             {
                 LabelResult[2].Text = "Pw = ";
@@ -237,6 +228,14 @@ namespace Laboratory_work__1
                 else if (TypeShem == "VariousSupportsR1R2") { LabelResult[5].Text = "Ur1 = "; LabelResult[6].Text = "Ur2 = "; }
                 else if (TypeShem == "VariousSupportsR1R3") { LabelResult[5].Text = "Ur1 = "; LabelResult[7].Text = "Ur3 = "; }
                 else if (TypeShem == "VariousSupportsR2R3") { LabelResult[6].Text = "Ur2 = "; LabelResult[7].Text = "Ur3 = "; }
+                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
+            }
+            else if (TypeShem == "ShortCircuitUxx" || TypeShem == "ShortCircuitIkz") 
+            { 
+                LabelResult[0].Text = "Коротке замикання: ";
+                LabelResult[1].Visible = false;
+                if (TypeShem == "ShortCircuitUxx") { LabelResult[2].Text = "Uxx = "; }
+                else if (TypeShem == "ShortCircuitIkz") { LabelResult[2].Text = "Ikz = "; }
                 OnOffVisibleResult(false, TextBoxesResult, LabelResult);
             }
             else
