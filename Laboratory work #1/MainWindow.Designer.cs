@@ -71,7 +71,7 @@
             MainPicture.Image = Properties.Resources.main_picture_shem;
             MainPicture.Location = new Point(32, 12);
             MainPicture.Name = "MainPicture";
-            MainPicture.Size = new Size(657, 380);
+            MainPicture.Size = new Size(626, 399);
             MainPicture.SizeMode = PictureBoxSizeMode.AutoSize;
             MainPicture.TabIndex = 0;
             MainPicture.TabStop = false;
@@ -379,7 +379,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 481);
+            ClientSize = new Size(1204, 481);
             Controls.Add(PanelInputElement);
             Controls.Add(PanelResult);
             Controls.Add(GetResult);

@@ -70,13 +70,13 @@
         public double[,] CalcVariousSupports(double[,] data, int[] Element)
         {
             double[,] result = new double[3, 3];
-            double[] temp_data = new double[2];
+            double[] temp_data = new double[2]; // 1 - Re, 2 - I1
             if (Element[1] == -1 )
             {
                 temp_data[0] = data[1, Element[0]];
             } else
             {
-                if (Element[0] == 2)
+                if (Element[0] == 1)
                 {
                     temp_data[0] = (data[1, Element[0]] * data[1, Element[1]]) /
                     (data[1, Element[0]] + data[1, Element[1]]);
@@ -88,8 +88,15 @@
             }
             temp_data[1] = data[0, 0] / temp_data[0];
             result[0, 0] = Math.Round(Math.Pow(temp_data[1], 2) * temp_data[0], 4, MidpointRounding.AwayFromZero);
-            result[1, Element[0]] = Math.Round(Math.Sqrt(result[0, 0] * data[1, Element[0]]), 4, MidpointRounding.AwayFromZero);
-            if (Element[1] != -1) { result[1, Element[1]] = Math.Round(Math.Sqrt(result[0, 0] * data[1, Element[1]]), 4, MidpointRounding.AwayFromZero); }
+            if (Element[0] == 1 && Element[1] == 2)
+            {
+                result[1, Element[0]] = data[0, 0];
+                result[1, Element[1]] = data[0, 0];
+            } else
+            {
+                result[1, Element[0]] = Math.Round(temp_data[1] * data[1, Element[0]], 4, MidpointRounding.AwayFromZero);
+                if (Element[1] != -1) { result[1, Element[1]] = Math.Round(temp_data[1] * data[1, Element[1]], 4, MidpointRounding.AwayFromZero); }
+            }
             return result;
         }
     } 
