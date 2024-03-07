@@ -27,7 +27,7 @@ namespace Audits
                     if (Switches[0] && !Switches[1])
                     {
                         if (!Switches[4] && !Switches[3]) { result = "VariousSupportsR1R2"; }
-                        else if (Switches[4] && !Switches[3]) { result = "VariousSupportsR2"; }
+                        else if (Switches[4]) { result = "VariousSupportsR2"; }
                     } else if (Switches[0] && Switches[1])
                     {
                         if (!Switches[3] && !Switches[4]) { result = "ShortCircuitUxx"; }
