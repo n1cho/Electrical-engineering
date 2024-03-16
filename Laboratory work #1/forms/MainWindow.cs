@@ -1,5 +1,4 @@
 using Audits;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Laboratory_work__1
 {
@@ -166,6 +165,8 @@ namespace Laboratory_work__1
                 LabelElement1.Text = "I1 = ";
                 LabelElement2.Text = "I2 = ";
                 LabelElement3.Text = "I3 = ";
+                LabelElement4.Visible = true;
+                TextBoxElement4.Visible = true;
                 LabelResultElement1.Text = "R1 = ";
                 LabelResultElement2.Text = "R2 = ";
                 LabelResultElement3.Text = "R3 = ";
@@ -182,6 +183,8 @@ namespace Laboratory_work__1
                 LabelElement1.Text = "R1 = ";
                 LabelElement2.Text = "R2 = ";
                 LabelElement3.Text = "R3 = ";
+                LabelElement4.Visible = false;
+                TextBoxElement4.Visible = false;
                 LabelResultElement1.Text = "I1 = ";
                 LabelResultElement2.Text = "I2 = ";
                 LabelResultElement3.Text = "I3 = ";
@@ -194,7 +197,7 @@ namespace Laboratory_work__1
             {
 
                 PanelResult.Visible = true;
-                TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3 };
+                TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3, TextBoxElement4 };
                 TextBox[] TextBoxesResult = {TextBoxResultElement1, TextBoxResultElement2, TextBoxResultElement3,
                     TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
                 Label[] LabelResult = {LabelTextResult, LabelTextOm,LabelResultElement1, LabelResultElement2,
@@ -202,9 +205,11 @@ namespace Laboratory_work__1
 
                 Data = Audit.CheckInput(TextBoxesInput, Type);
 
-                TypeShem = Audit.CheckShem(Switches);
+                TypeShem = Audit.CheckShem(Switches, Type);
 
                 Result = Audit.GetResult(TypeShem, Data, Type);
+
+                LabelElementERS.Text = Convert.ToString(Data[1, 3]);
 
                 for (int i = 0; i < 3; i++)
                 {
@@ -262,6 +267,12 @@ namespace Laboratory_work__1
                 }
                 else { TextBoxesResult[i].Visible = true; LabelResult[i + 2].Visible = true; }
             }
+        }
+
+        private void òåîðèòè÷í³Â³äîìîñò³ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TheoryWindow TheoryWindow = new TheoryWindow();
+            TheoryWindow.Show();
         }
     }
 }

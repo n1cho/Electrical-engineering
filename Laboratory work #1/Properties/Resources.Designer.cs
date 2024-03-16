@@ -69,5 +69,15 @@ namespace Laboratory_work__1.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap theory_picture_1_1 {
+            get {
+                object obj = ResourceManager.GetObject("theory_picture_1.1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
