@@ -65,6 +65,8 @@
             TextBoxElement4 = new TextBox();
             menuStrip1 = new MenuStrip();
             теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
+            LabelPw = new Label();
+            TextBoxResultPw = new TextBox();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -227,6 +229,8 @@
             // 
             // PanelResult
             // 
+            PanelResult.Controls.Add(TextBoxResultPw);
+            PanelResult.Controls.Add(LabelPw);
             PanelResult.Controls.Add(TextBoxResultOm3);
             PanelResult.Controls.Add(LabelOm3);
             PanelResult.Controls.Add(TextBoxResultOm2);
@@ -414,6 +418,23 @@
             теоритичніВідомостіToolStripMenuItem.Text = "Теоритичні відомості";
             теоритичніВідомостіToolStripMenuItem.Click += теоритичніВідомостіToolStripMenuItem_Click;
             // 
+            // LabelPw
+            // 
+            LabelPw.AutoSize = true;
+            LabelPw.Location = new Point(20, 345);
+            LabelPw.Name = "LabelPw";
+            LabelPw.Size = new Size(37, 15);
+            LabelPw.TabIndex = 14;
+            LabelPw.Text = "Pw = ";
+            // 
+            // TextBoxResultPw
+            // 
+            TextBoxResultPw.Location = new Point(60, 342);
+            TextBoxResultPw.Name = "TextBoxResultPw";
+            TextBoxResultPw.ReadOnly = true;
+            TextBoxResultPw.Size = new Size(100, 23);
+            TextBoxResultPw.TabIndex = 15;
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -486,5 +507,7 @@
         private TextBox TextBoxElement4;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem теоритичніВідомостіToolStripMenuItem;
+        private TextBox TextBoxResultPw;
+        private Label LabelPw;
     }
 }

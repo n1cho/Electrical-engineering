@@ -62,7 +62,6 @@ namespace Audits
 
         public double[,] GetResult(string TypeShem, double[,] data, char Type)
         {
-            // добавити вираховування коли дано струм
             double[,] result = new double[3, 3];
             if (TypeShem == "DefaultAllERSR" || TypeShem == "DefaultERS1R" || TypeShem == "DefaultERS2R")
             {
