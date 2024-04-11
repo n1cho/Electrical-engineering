@@ -46,6 +46,8 @@
             TextBoxElement3 = new TextBox();
             GetResult = new Button();
             PanelResult = new Panel();
+            TextBoxResultPw = new TextBox();
+            LabelPw = new Label();
             TextBoxResultOm3 = new TextBox();
             LabelOm3 = new Label();
             TextBoxResultOm2 = new TextBox();
@@ -65,8 +67,6 @@
             TextBoxElement4 = new TextBox();
             menuStrip1 = new MenuStrip();
             теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
-            LabelPw = new Label();
-            TextBoxResultPw = new TextBox();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -141,10 +141,10 @@
             RadioButtonI.AutoSize = true;
             RadioButtonI.Location = new Point(750, 190);
             RadioButtonI.Name = "RadioButtonI";
-            RadioButtonI.Size = new Size(97, 19);
+            RadioButtonI.Size = new Size(96, 19);
             RadioButtonI.TabIndex = 7;
             RadioButtonI.TabStop = true;
-            RadioButtonI.Text = "Сили стриму";
+            RadioButtonI.Text = "Сили струму";
             RadioButtonI.UseVisualStyleBackColor = true;
             RadioButtonI.CheckedChanged += RadioButtonI_CheckedChanged;
             // 
@@ -249,6 +249,23 @@
             PanelResult.Name = "PanelResult";
             PanelResult.Size = new Size(220, 400);
             PanelResult.TabIndex = 17;
+            // 
+            // TextBoxResultPw
+            // 
+            TextBoxResultPw.Location = new Point(60, 342);
+            TextBoxResultPw.Name = "TextBoxResultPw";
+            TextBoxResultPw.ReadOnly = true;
+            TextBoxResultPw.Size = new Size(100, 23);
+            TextBoxResultPw.TabIndex = 15;
+            // 
+            // LabelPw
+            // 
+            LabelPw.AutoSize = true;
+            LabelPw.Location = new Point(20, 345);
+            LabelPw.Name = "LabelPw";
+            LabelPw.Size = new Size(37, 15);
+            LabelPw.TabIndex = 14;
+            LabelPw.Text = "Pw = ";
             // 
             // TextBoxResultOm3
             // 
@@ -417,23 +434,6 @@
             теоритичніВідомостіToolStripMenuItem.Size = new Size(136, 20);
             теоритичніВідомостіToolStripMenuItem.Text = "Теоритичні відомості";
             теоритичніВідомостіToolStripMenuItem.Click += теоритичніВідомостіToolStripMenuItem_Click;
-            // 
-            // LabelPw
-            // 
-            LabelPw.AutoSize = true;
-            LabelPw.Location = new Point(20, 345);
-            LabelPw.Name = "LabelPw";
-            LabelPw.Size = new Size(37, 15);
-            LabelPw.TabIndex = 14;
-            LabelPw.Text = "Pw = ";
-            // 
-            // TextBoxResultPw
-            // 
-            TextBoxResultPw.Location = new Point(60, 342);
-            TextBoxResultPw.Name = "TextBoxResultPw";
-            TextBoxResultPw.ReadOnly = true;
-            TextBoxResultPw.Size = new Size(100, 23);
-            TextBoxResultPw.TabIndex = 15;
             // 
             // MainWindow
             // 

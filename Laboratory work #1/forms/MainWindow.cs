@@ -214,17 +214,18 @@ namespace Laboratory_work__1
                     TextBoxesResult[i].Text = Convert.ToString(Result[0, i]);
                     TextBoxesResult[i + 3].Text = Convert.ToString(Result[1, i]);
                 }
-                if (Type == 'i' && TextBoxERS2.ReadOnly)
+                if (Type == 'r' && TypeShem == "DefaultERS1R")
                 {
                     TextBoxResultPw.Text = Convert.ToString(
                         Math.Round(
-                            Math.Pow(Data[1, 0], 2) * (Result[0, 0] + 
-                            ((Result[0, 1] * Result[0, 2]) / (Result[0, 1] + Result[0, 2]))),
+                            Math.Pow(Result[0, 0], 2) * (Data[1, 0] +
+                            ((Data[1, 1] * Data[1, 2]) / (Data[1, 1] + Data[1, 2]))),
                             4, MidpointRounding.AwayFromZero));
                     TextBoxResultPw.Visible = true;
                     LabelPw.Visible = true;
                     // Pw = I1^2*(R1+((R2*R3)/(R2+R3))
-                } else { TextBoxResultPw.Visible = false; LabelPw.Visible = false; }
+                }
+                else { TextBoxResultPw.Visible = false; LabelPw.Visible = false; }
                 CheckVisibleShemResult(TypeShem, TextBoxesResult, LabelResult, Type);
             }
             else

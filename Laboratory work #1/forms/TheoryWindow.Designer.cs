@@ -59,6 +59,15 @@
             Label_subpart1_5_text2 = new Label();
             TheoryPicture1_5 = new PictureBox();
             Label_subpart1_5_text3 = new Label();
+            Label_title_part2 = new Label();
+            Label_part2_text1 = new Label();
+            TheoryPicture1_6 = new PictureBox();
+            TheoryPicture1_6_2 = new PictureBox();
+            Label_name_picture2_6 = new Label();
+            Label_part2_text2 = new Label();
+            TheoryPicture1_7_1 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            Label_name_picture1_7_2 = new Label();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TheoryFormula1_1).BeginInit();
@@ -68,6 +77,10 @@
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_6_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_7_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Label_tittle
@@ -367,12 +380,111 @@
             Label_subpart1_5_text3.TabIndex = 29;
             Label_subpart1_5_text3.Text = "причому G0 = 1/R0 , оскільки G0 = 1/Rе. Внутрішній опір R0 можна визначити з дослідів холостого ходу і короткого замикання R0 = UХХ. / ІКЗ.";
             // 
+            // Label_title_part2
+            // 
+            Label_title_part2.AutoSize = true;
+            Label_title_part2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            Label_title_part2.Location = new Point(30, 2620);
+            Label_title_part2.Name = "Label_title_part2";
+            Label_title_part2.Size = new Size(257, 19);
+            Label_title_part2.TabIndex = 30;
+            Label_title_part2.Text = "2. ОПИС ЛАБОРАТОРНОЇ УСТАНОВКИ";
+            // 
+            // Label_part2_text1
+            // 
+            Label_part2_text1.AutoSize = true;
+            Label_part2_text1.Location = new Point(30, 2640);
+            Label_part2_text1.MaximumSize = new Size(750, 0);
+            Label_part2_text1.Name = "Label_part2_text1";
+            Label_part2_text1.Size = new Size(746, 150);
+            Label_part2_text1.TabIndex = 31;
+            Label_part2_text1.Text = resources.GetString("Label_part2_text1.Text");
+            // 
+            // TheoryPicture1_6
+            // 
+            TheoryPicture1_6.Image = Properties.Resources.theory_picture_1_6;
+            TheoryPicture1_6.Location = new Point(155, 2800);
+            TheoryPicture1_6.Name = "TheoryPicture1_6";
+            TheoryPicture1_6.Size = new Size(494, 232);
+            TheoryPicture1_6.SizeMode = PictureBoxSizeMode.AutoSize;
+            TheoryPicture1_6.TabIndex = 32;
+            TheoryPicture1_6.TabStop = false;
+            // 
+            // TheoryPicture1_6_2
+            // 
+            TheoryPicture1_6_2.Image = Properties.Resources.theory_picture_1_6_2;
+            TheoryPicture1_6_2.Location = new Point(100, 3050);
+            TheoryPicture1_6_2.Name = "TheoryPicture1_6_2";
+            TheoryPicture1_6_2.Size = new Size(600, 326);
+            TheoryPicture1_6_2.SizeMode = PictureBoxSizeMode.AutoSize;
+            TheoryPicture1_6_2.TabIndex = 33;
+            TheoryPicture1_6_2.TabStop = false;
+            // 
+            // Label_name_picture2_6
+            // 
+            Label_name_picture2_6.AutoSize = true;
+            Label_name_picture2_6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Label_name_picture2_6.Location = new Point(300, 3390);
+            Label_name_picture2_6.Name = "Label_name_picture2_6";
+            Label_name_picture2_6.Size = new Size(258, 21);
+            Label_name_picture2_6.TabIndex = 34;
+            Label_name_picture2_6.Text = "Рисунок 2.6 - Лабораторний стенд";
+            // 
+            // Label_part2_text2
+            // 
+            Label_part2_text2.AutoSize = true;
+            Label_part2_text2.Location = new Point(30, 3415);
+            Label_part2_text2.MaximumSize = new Size(750, 0);
+            Label_part2_text2.Name = "Label_part2_text2";
+            Label_part2_text2.Size = new Size(742, 225);
+            Label_part2_text2.TabIndex = 35;
+            Label_part2_text2.Text = resources.GetString("Label_part2_text2.Text");
+            // 
+            // TheoryPicture1_7_1
+            // 
+            TheoryPicture1_7_1.Image = Properties.Resources.theory_picture_1_7_1;
+            TheoryPicture1_7_1.Location = new Point(155, 3650);
+            TheoryPicture1_7_1.Name = "TheoryPicture1_7_1";
+            TheoryPicture1_7_1.Size = new Size(500, 227);
+            TheoryPicture1_7_1.SizeMode = PictureBoxSizeMode.AutoSize;
+            TheoryPicture1_7_1.TabIndex = 36;
+            TheoryPicture1_7_1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.theory_picture_1_7_2;
+            pictureBox1.Location = new Point(170, 3900);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(472, 301);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 37;
+            pictureBox1.TabStop = false;
+            // 
+            // Label_name_picture1_7_2
+            // 
+            Label_name_picture1_7_2.AutoSize = true;
+            Label_name_picture1_7_2.Location = new Point(290, 4210);
+            Label_name_picture1_7_2.Name = "Label_name_picture1_7_2";
+            Label_name_picture1_7_2.RightToLeft = RightToLeft.No;
+            Label_name_picture1_7_2.Size = new Size(283, 15);
+            Label_name_picture1_7_2.TabIndex = 38;
+            Label_name_picture1_7_2.Text = "Рисунок 2.7 –  Загальна робоча електрична схема";
+            // 
             // TheoryWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(804, 601);
+            Controls.Add(Label_name_picture1_7_2);
+            Controls.Add(pictureBox1);
+            Controls.Add(TheoryPicture1_7_1);
+            Controls.Add(Label_part2_text2);
+            Controls.Add(Label_name_picture2_6);
+            Controls.Add(TheoryPicture1_6_2);
+            Controls.Add(TheoryPicture1_6);
+            Controls.Add(Label_part2_text1);
+            Controls.Add(Label_title_part2);
             Controls.Add(Label_subpart1_5_text3);
             Controls.Add(TheoryPicture1_5);
             Controls.Add(Label_subpart1_5_text2);
@@ -414,6 +526,10 @@
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_3).EndInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_4).EndInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_6_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)TheoryPicture1_7_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -450,5 +566,14 @@
         private Label Label_subpart1_5_text2;
         private PictureBox TheoryPicture1_5;
         private Label Label_subpart1_5_text3;
+        private Label Label_title_part2;
+        private Label Label_part2_text1;
+        private PictureBox TheoryPicture1_6;
+        private PictureBox TheoryPicture1_6_2;
+        private Label Label_name_picture2_6;
+        private Label Label_part2_text2;
+        private PictureBox TheoryPicture1_7_1;
+        private PictureBox pictureBox1;
+        private Label Label_name_picture1_7_2;
     }
 }
