@@ -284,5 +284,11 @@ namespace Laboratory_work__1
             TheoryWindow TheoryWindow = new TheoryWindow();
             TheoryWindow.Show();
         }
+
+        private void порядокВиконанняToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcedureWindow ProcedureWindow = new ProcedureWindow();
+            ProcedureWindow.Show();
+        }
     }
 }

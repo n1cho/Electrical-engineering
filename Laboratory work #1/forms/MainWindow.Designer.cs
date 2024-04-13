@@ -67,6 +67,7 @@
             TextBoxElement4 = new TextBox();
             menuStrip1 = new MenuStrip();
             теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
+            порядокВиконанняToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -421,7 +422,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { теоритичніВідомостіToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { теоритичніВідомостіToolStripMenuItem, порядокВиконанняToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1204, 24);
@@ -434,6 +435,13 @@
             теоритичніВідомостіToolStripMenuItem.Size = new Size(136, 20);
             теоритичніВідомостіToolStripMenuItem.Text = "Теоритичні відомості";
             теоритичніВідомостіToolStripMenuItem.Click += теоритичніВідомостіToolStripMenuItem_Click;
+            // 
+            // порядокВиконанняToolStripMenuItem
+            // 
+            порядокВиконанняToolStripMenuItem.Name = "порядокВиконанняToolStripMenuItem";
+            порядокВиконанняToolStripMenuItem.Size = new Size(129, 20);
+            порядокВиконанняToolStripMenuItem.Text = "Порядок виконання";
+            порядокВиконанняToolStripMenuItem.Click += порядокВиконанняToolStripMenuItem_Click;
             // 
             // MainWindow
             // 
@@ -509,5 +517,6 @@
         private ToolStripMenuItem теоритичніВідомостіToolStripMenuItem;
         private TextBox TextBoxResultPw;
         private Label LabelPw;
+        private ToolStripMenuItem порядокВиконанняToolStripMenuItem;
     }
 }
