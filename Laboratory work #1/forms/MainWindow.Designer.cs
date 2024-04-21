@@ -46,6 +46,8 @@
             TextBoxElement3 = new TextBox();
             GetResult = new Button();
             PanelResult = new Panel();
+            TextBoxResultPw = new TextBox();
+            LabelPw = new Label();
             TextBoxResultOm3 = new TextBox();
             LabelOm3 = new Label();
             TextBoxResultOm2 = new TextBox();
@@ -61,17 +63,24 @@
             LabelResultElement1 = new Label();
             LabelTextResult = new Label();
             PanelInputElement = new Panel();
+            LabelElement4 = new Label();
+            TextBoxElement4 = new TextBox();
+            menuStrip1 = new MenuStrip();
+            теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
+            порядокВиконанняToolStripMenuItem = new ToolStripMenuItem();
+            тестовіЗапитанняToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // MainPicture
             // 
             MainPicture.Image = Properties.Resources.main_picture_shem;
-            MainPicture.Location = new Point(32, 12);
+            MainPicture.Location = new Point(30, 40);
             MainPicture.Name = "MainPicture";
-            MainPicture.Size = new Size(657, 380);
+            MainPicture.Size = new Size(626, 399);
             MainPicture.SizeMode = PictureBoxSizeMode.AutoSize;
             MainPicture.TabIndex = 0;
             MainPicture.TabStop = false;
@@ -134,10 +143,10 @@
             RadioButtonI.AutoSize = true;
             RadioButtonI.Location = new Point(750, 190);
             RadioButtonI.Name = "RadioButtonI";
-            RadioButtonI.Size = new Size(97, 19);
+            RadioButtonI.Size = new Size(96, 19);
             RadioButtonI.TabIndex = 7;
             RadioButtonI.TabStop = true;
-            RadioButtonI.Text = "Сили стриму";
+            RadioButtonI.Text = "Сили струму";
             RadioButtonI.UseVisualStyleBackColor = true;
             RadioButtonI.CheckedChanged += RadioButtonI_CheckedChanged;
             // 
@@ -212,7 +221,7 @@
             // 
             // GetResult
             // 
-            GetResult.Location = new Point(600, 445);
+            GetResult.Location = new Point(600, 470);
             GetResult.Name = "GetResult";
             GetResult.Size = new Size(85, 25);
             GetResult.TabIndex = 16;
@@ -222,6 +231,8 @@
             // 
             // PanelResult
             // 
+            PanelResult.Controls.Add(TextBoxResultPw);
+            PanelResult.Controls.Add(LabelPw);
             PanelResult.Controls.Add(TextBoxResultOm3);
             PanelResult.Controls.Add(LabelOm3);
             PanelResult.Controls.Add(TextBoxResultOm2);
@@ -240,6 +251,23 @@
             PanelResult.Name = "PanelResult";
             PanelResult.Size = new Size(220, 400);
             PanelResult.TabIndex = 17;
+            // 
+            // TextBoxResultPw
+            // 
+            TextBoxResultPw.Location = new Point(60, 342);
+            TextBoxResultPw.Name = "TextBoxResultPw";
+            TextBoxResultPw.ReadOnly = true;
+            TextBoxResultPw.Size = new Size(100, 23);
+            TextBoxResultPw.TabIndex = 15;
+            // 
+            // LabelPw
+            // 
+            LabelPw.AutoSize = true;
+            LabelPw.Location = new Point(20, 345);
+            LabelPw.Name = "LabelPw";
+            LabelPw.Size = new Size(37, 15);
+            LabelPw.TabIndex = 14;
+            LabelPw.Text = "Pw = ";
             // 
             // TextBoxResultOm3
             // 
@@ -363,6 +391,8 @@
             // 
             // PanelInputElement
             // 
+            PanelInputElement.Controls.Add(LabelElement4);
+            PanelInputElement.Controls.Add(TextBoxElement4);
             PanelInputElement.Controls.Add(LabelElement);
             PanelInputElement.Controls.Add(LabelElement1);
             PanelInputElement.Controls.Add(TextBoxElement1);
@@ -372,14 +402,60 @@
             PanelInputElement.Controls.Add(TextBoxElement2);
             PanelInputElement.Location = new Point(730, 260);
             PanelInputElement.Name = "PanelInputElement";
-            PanelInputElement.Size = new Size(200, 158);
+            PanelInputElement.Size = new Size(200, 209);
             PanelInputElement.TabIndex = 18;
+            // 
+            // LabelElement4
+            // 
+            LabelElement4.AutoSize = true;
+            LabelElement4.Location = new Point(20, 175);
+            LabelElement4.Name = "LabelElement4";
+            LabelElement4.Size = new Size(34, 15);
+            LabelElement4.TabIndex = 17;
+            LabelElement4.Text = "R1 = ";
+            // 
+            // TextBoxElement4
+            // 
+            TextBoxElement4.Location = new Point(58, 171);
+            TextBoxElement4.Name = "TextBoxElement4";
+            TextBoxElement4.Size = new Size(100, 23);
+            TextBoxElement4.TabIndex = 16;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { теоритичніВідомостіToolStripMenuItem, порядокВиконанняToolStripMenuItem, тестовіЗапитанняToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1204, 24);
+            menuStrip1.TabIndex = 19;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // теоритичніВідомостіToolStripMenuItem
+            // 
+            теоритичніВідомостіToolStripMenuItem.Name = "теоритичніВідомостіToolStripMenuItem";
+            теоритичніВідомостіToolStripMenuItem.Size = new Size(136, 20);
+            теоритичніВідомостіToolStripMenuItem.Text = "Теоритичні відомості";
+            теоритичніВідомостіToolStripMenuItem.Click += теоритичніВідомостіToolStripMenuItem_Click;
+            // 
+            // порядокВиконанняToolStripMenuItem
+            // 
+            порядокВиконанняToolStripMenuItem.Name = "порядокВиконанняToolStripMenuItem";
+            порядокВиконанняToolStripMenuItem.Size = new Size(129, 20);
+            порядокВиконанняToolStripMenuItem.Text = "Порядок виконання";
+            порядокВиконанняToolStripMenuItem.Click += порядокВиконанняToolStripMenuItem_Click;
+            // 
+            // тестовіЗапитанняToolStripMenuItem
+            // 
+            тестовіЗапитанняToolStripMenuItem.Name = "тестовіЗапитанняToolStripMenuItem";
+            тестовіЗапитанняToolStripMenuItem.Size = new Size(117, 20);
+            тестовіЗапитанняToolStripMenuItem.Text = "Тестові запитання";
+            тестовіЗапитанняToolStripMenuItem.Click += тестовіЗапитанняToolStripMenuItem_Click;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 481);
+            ClientSize = new Size(1204, 511);
             Controls.Add(PanelInputElement);
             Controls.Add(PanelResult);
             Controls.Add(GetResult);
@@ -392,13 +468,18 @@
             Controls.Add(LabelERS1);
             Controls.Add(LabelElementERS);
             Controls.Add(MainPicture);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "MainWindow";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Лабораторна робота №1";
             ((System.ComponentModel.ISupportInitialize)MainPicture).EndInit();
             PanelResult.ResumeLayout(false);
             PanelResult.PerformLayout();
             PanelInputElement.ResumeLayout(false);
             PanelInputElement.PerformLayout();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -438,5 +519,13 @@
         private TextBox TextBoxResultOm2;
         private TextBox TextBoxResultOm3;
         private Panel PanelInputElement;
+        private Label LabelElement4;
+        private TextBox TextBoxElement4;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem теоритичніВідомостіToolStripMenuItem;
+        private TextBox TextBoxResultPw;
+        private Label LabelPw;
+        private ToolStripMenuItem порядокВиконанняToolStripMenuItem;
+        private ToolStripMenuItem тестовіЗапитанняToolStripMenuItem;
     }
 }

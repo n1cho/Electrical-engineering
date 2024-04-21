@@ -1,5 +1,4 @@
 using Audits;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Laboratory_work__1
 {
@@ -9,19 +8,19 @@ namespace Laboratory_work__1
         bool[] Switches = { false, false, false, false, false, false, false };
         double[,] Result = new double[3, 3];
         int[,,] Coordinates = { // { start, on, off }
-            { { 127, 120 },{ 110, 150 }, { 140, 150 } }, // Coordinates switch SA1
-            { { 523, 120 },{ 540, 150 }, { 510, 150 } }, // Coordinates switch SA2
-            { { 415, 126 },{ 415, 97 }, { 405, 100 } }, // Coordinates switch SA3
-            { { 465, 220 },{ 465, 190 }, { 455, 190 } }, // Coordinates switch On/Off R3
-            { { 315, 11 },{ 345, 11 }, { 345, 20 } }, // Coordinates switch On/Off R1
-            { { 343, 370 },{ 318, 370 }, { 320, 360 } }, // Coordinates switch On/Off Left site shem
-            { { 480, 370 },{ 505, 370 }, { 505, 360 } } // Coordinates switch On/Off Right site shem
+            { { 124, 135 },{ 105, 165 }, { 140, 162 } }, // Coordinates switch SA1
+            { { 494, 135 },{ 510, 163 }, { 480, 164 } }, // Coordinates switch SA2
+            { { 394, 135 },{ 394, 113 }, { 383, 113 } }, // Coordinates switch SA3
+            { { 440, 228 },{ 440, 200 }, { 430, 200 } }, // Coordinates switch On/Off R3
+            { { 300, 33 },{ 327, 33 }, { 325, 40 } }, // Coordinates switch On/Off R1
+            { { 333, 367 },{ 305, 367 }, { 305, 377 } }, // Coordinates switch On/Off Left site shem
+            { { 454, 367 },{ 483, 367 }, { 483, 377 } } // Coordinates switch On/Off Right site shem
         };
         int Range = 25;
         char Type;
         string TypeShem = String.Empty;
 
-        Graphics ? Graphic;
+        Graphics? Graphic;
         Point Coordinates_Click;
         Audit Audit = new Audit();
 
@@ -101,13 +100,11 @@ namespace Laboratory_work__1
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 1, 0], Coordinates[5, 1, 1]);
-                TextBoxElement1.ReadOnly = false;
             }
             else
             {
                 Graphic.DrawLine(Pens.Black, Coordinates[5, 0, 0], Coordinates[5, 0, 1],
                     Coordinates[5, 2, 0], Coordinates[5, 2, 1]);
-                TextBoxElement1.ReadOnly = true;
             }
             if (Switches[6]) // Switch On/Off Right site shem
             {
@@ -121,7 +118,7 @@ namespace Laboratory_work__1
                     Coordinates[6, 2, 0], Coordinates[6, 2, 1]);
                 TextBoxElement2.ReadOnly = true;
             }
-            
+
             if (Switches[2] && !Switches[3])
             {
                 TextBoxElement3.ReadOnly = false;
@@ -130,7 +127,8 @@ namespace Laboratory_work__1
             {
                 TextBoxElement3.ReadOnly = true;
             }
-            if (Switches[0] && !Switches[4])
+
+            if (Switches[5] && !Switches[4])
             {
                 TextBoxElement1.ReadOnly = false;
             }
@@ -167,6 +165,8 @@ namespace Laboratory_work__1
                 LabelElement1.Text = "I1 = ";
                 LabelElement2.Text = "I2 = ";
                 LabelElement3.Text = "I3 = ";
+                LabelElement4.Visible = true;
+                TextBoxElement4.Visible = true;
                 LabelResultElement1.Text = "R1 = ";
                 LabelResultElement2.Text = "R2 = ";
                 LabelResultElement3.Text = "R3 = ";
@@ -183,6 +183,8 @@ namespace Laboratory_work__1
                 LabelElement1.Text = "R1 = ";
                 LabelElement2.Text = "R2 = ";
                 LabelElement3.Text = "R3 = ";
+                LabelElement4.Visible = false;
+                TextBoxElement4.Visible = false;
                 LabelResultElement1.Text = "I1 = ";
                 LabelResultElement2.Text = "I2 = ";
                 LabelResultElement3.Text = "I3 = ";
@@ -191,10 +193,11 @@ namespace Laboratory_work__1
 
         private void GetResult_Click(object sender, EventArgs e)
         {
-            if (Type == 'i' || Type == 'r') {
+            if (Type == 'i' || Type == 'r')
+            {
 
                 PanelResult.Visible = true;
-                TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3 };
+                TextBox[] TextBoxesInput = { TextBoxERS1, TextBoxERS2, TextBoxElement1, TextBoxElement2, TextBoxElement3, TextBoxElement4 };
                 TextBox[] TextBoxesResult = {TextBoxResultElement1, TextBoxResultElement2, TextBoxResultElement3,
                     TextBoxResultOm1, TextBoxResultOm2, TextBoxResultOm3};
                 Label[] LabelResult = {LabelTextResult, LabelTextOm,LabelResultElement1, LabelResultElement2,
@@ -202,7 +205,7 @@ namespace Laboratory_work__1
 
                 Data = Audit.CheckInput(TextBoxesInput, Type);
 
-                TypeShem = Audit.CheckShem(Switches);
+                TypeShem = Audit.CheckShem(Switches, Type);
 
                 Result = Audit.GetResult(TypeShem, Data, Type);
 
@@ -211,8 +214,21 @@ namespace Laboratory_work__1
                     TextBoxesResult[i].Text = Convert.ToString(Result[0, i]);
                     TextBoxesResult[i + 3].Text = Convert.ToString(Result[1, i]);
                 }
+                if (Type == 'r' && TypeShem == "DefaultERS1R")
+                {
+                    TextBoxResultPw.Text = Convert.ToString(
+                        Math.Round(
+                            Math.Pow(Result[0, 0], 2) * (Data[1, 0] +
+                            ((Data[1, 1] * Data[1, 2]) / (Data[1, 1] + Data[1, 2]))),
+                            4, MidpointRounding.AwayFromZero));
+                    TextBoxResultPw.Visible = true;
+                    LabelPw.Visible = true;
+                    // Pw = I1^2*(R1+((R2*R3)/(R2+R3))
+                }
+                else { TextBoxResultPw.Visible = false; LabelPw.Visible = false; }
                 CheckVisibleShemResult(TypeShem, TextBoxesResult, LabelResult, Type);
-            } else
+            }
+            else
             {
                 MessageBox.Show("Ви не вибрали заданий елемент", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -220,14 +236,7 @@ namespace Laboratory_work__1
 
         private void CheckVisibleShemResult(string TypeShem, TextBox[] TextBoxesResult, Label[] LabelResult, char Type)
         {
-            if (TypeShem == "ShortCircuit") {
-                LabelResult[0].Text = "Коротке замикання: ";
-                LabelResult[2].Text = "Ikz = ";
-                LabelResult[3].Text = "Uxx = ";
-                LabelResult[1].Visible = false;
-                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
-            }
-            else if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
+            if (TypeShem == "VariousSupportsR1" || TypeShem == "VariousSupportsR2" || TypeShem == "VariousSupportsR3" ||
                 TypeShem == "VariousSupportsR1R2" || TypeShem == "VariousSupportsR1R3" || TypeShem == "VariousSupportsR2R3")
             {
                 LabelResult[2].Text = "Pw = ";
@@ -237,6 +246,14 @@ namespace Laboratory_work__1
                 else if (TypeShem == "VariousSupportsR1R2") { LabelResult[5].Text = "Ur1 = "; LabelResult[6].Text = "Ur2 = "; }
                 else if (TypeShem == "VariousSupportsR1R3") { LabelResult[5].Text = "Ur1 = "; LabelResult[7].Text = "Ur3 = "; }
                 else if (TypeShem == "VariousSupportsR2R3") { LabelResult[6].Text = "Ur2 = "; LabelResult[7].Text = "Ur3 = "; }
+                OnOffVisibleResult(false, TextBoxesResult, LabelResult);
+            }
+            else if (TypeShem == "ShortCircuitUxx" || TypeShem == "ShortCircuitIkz")
+            {
+                LabelResult[0].Text = "Коротке замикання: ";
+                LabelResult[1].Visible = false;
+                if (TypeShem == "ShortCircuitUxx") { LabelResult[2].Text = "Uxx = "; }
+                else if (TypeShem == "ShortCircuitIkz") { LabelResult[2].Text = "Ikz = "; }
                 OnOffVisibleResult(false, TextBoxesResult, LabelResult);
             }
             else
@@ -253,13 +270,31 @@ namespace Laboratory_work__1
         {
             for (int i = 0; i < 6; i++)
             {
-                if (TextBoxesResult[i].Text == "0" && !OnOff) 
-                { 
+                if (TextBoxesResult[i].Text == "0" && !OnOff)
+                {
                     TextBoxesResult[i].Visible = false;
                     LabelResult[i + 2].Visible = false;
                 }
                 else { TextBoxesResult[i].Visible = true; LabelResult[i + 2].Visible = true; }
             }
+        }
+
+        private void теоритичніВідомостіToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TheoryWindow TheoryWindow = new TheoryWindow();
+            TheoryWindow.Show();
+        }
+
+        private void порядокВиконанняToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcedureWindow ProcedureWindow = new ProcedureWindow();
+            ProcedureWindow.Show();
+        }
+
+        private void тестовіЗапитанняToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TestWindow TestWindow = new TestWindow();
+            TestWindow.Show();
         }
     }
 }

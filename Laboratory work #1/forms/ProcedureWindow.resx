@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label_part1_text1.Text" xml:space="preserve">
+    <value>3.1 При виконанні лабораторної роботи «оnline» необхідно: 
+Зібрати електричне коло, схема якого зображена на рисунку 2.8, на основі загальної робочої електричної схеми (рисунок 2.7,б).  Ключі  SА3, SА4, SА5 – ввімкнути,  а ключі SR1 та SR3 – розімкнути, ключі SА1, SА2  - перевести в положення 1 чи 2 (рисунок 2.7,а), залежно від умов вказаних у пунктах нижче. 
+3.2. Згідно таблиці 2.1 (за вказівкою викладача) вибираємо дані ЕРС Е1, ЕРС Е2 та значення опорів резисторів R1, R2, R3 і заносимо у клітинки розміщені справа від схеми (рисунок 2.7,а).</value>
+  </data>
+  <data name="Label_part1_text2.Text" xml:space="preserve">
+    <value>3.2 Експериментально перевірити справедливість законів Кірхгофа і принципу накладання. 
+Необхідно визначити струми у вітках кола і напруги на окремих елементах кола і для цього:
+а) Зібрати електричне коло при дії джерела ЕРС Е1 й відсутності джерела ЕРС Е2 (рисунок 2.8 та рисунок  2.7,а):
+- ключ SА1 перевести в положення 1, а ключ SА2 перевести в положення 2 (рисунок 2.7,а);
+- ключі SА3, SА4, SА5 – ввімкнути, ключі SR1, SR3 – розімкнути;
+-	дані приладів вимірювання амперметра та вольтметра, тобто значення струмів І1,І2,І3 у вітках кола і спади напруг на резисторах UR1, UR2, UR3 занести в таблицю 2.2; 
+б) Зібрати електричне коло при дії джерела ЕРС Е2 і відсутності джерела ЕРС Е1 (рисунок 2.8 та рисунок  2.7,а):
+- ключ SА2 перевести в положення 1 і відсутності джерела ЕРС Е1 ключ SА1 перевести в положення 2 (рисунок 2.7);
+- ключі SА3, SА4, SА5 – ввімкнути, ключі SR1, SR3 – розімкнути;
+-	дані приладів вимірювання амперметра та вольтметра, тобто значення струмів І1,І2,І3 у вітках кола і спади напруг на резисторах UR1, UR2, UR3 занести в таблицю 2.2; 
+в) Зібрати електричне коло при одночасній дії джерел ЕРС Е1 та Е2 (рисунок 2.8 та рисунок  2.7,а): 
+-  ключі SА1 і SА2 перевести в положення 1 (рисунок 2.7,а). 
+- дані приладів вимірювання амперметра та вольтметра, тобто значення струмів І1,І2,І3 у вітках кола і спади напруг на резисторах UR1, UR2, UR3 занести в таблицю 2.2;
+- при проведенні вказаних дослідів з застосуванням електричного кола зображеного на рисунку 2.8, яка зібрана на основі загальної робочої електричної схеми (рисунок 2.7,б) ключі  SА3, SА4, SА5 - ввімкнені, а ключі SR1 та SR3 – розімкнені.</value>
+  </data>
+  <data name="Label_part1_text3_1.Text" xml:space="preserve">
+    <value>3.3 Експериментально перевірити справедливість теореми про еквівалентний генератор, для цього необхідно:
+3.3.1 Визначити напругу неробочого режиму UН.Х.:
+а) Зібрати електричне коло при дії джерел ЕРС Е1 та Е2 (ключі SА3, SR1 та SR3 – розімкнути, ключі SА4, SА5 - ввімкнути, ключі SА1 і SА2 перевести в положення 1 (рисунок 2.7,а)). В точках вузлів схеми (рисунок 2.7,б) 3 і 4 виміряти напругу неробочого режиму UН.Х.; ключі  SА3, - ввімкнені, а ключі SR1 та SR3 – розімкнені.
+б) Дані приладів вимірювання амперметра та вольтметра, тобто значення струмів І1,І2,І3 у вітках кола і спади напруг на резисторах UR1, UR2, UR3 занести в таблицю 2.2; 
+3.3.2. Визначити струм короткого за¬микання ІК.З. у вітці  між вузлами 3 та 4:
+а) Зібрати електричне коло при дії джерел ЕРС Е1 та Е2 (ключ SА3, SR3, SА4, SА5 – замкнути, ключ SR1 – розімкнути, а ключі  SА1 і SА2 перевести в положення 1 (рисунок 2.7,б).</value>
+  </data>
+  <data name="Label_part1_text3_2.Text" xml:space="preserve">
+    <value>3.3.3  Виміряти струм І3 і для цього:
+а) Зібрати електричне коло (рисунок 2.4,а) на базі електричної схеми 2.7,б і здійснити заміну вітки між вузлами 3 і 4 (з резистором R3) еквівалентним джерелом ЕРС ЕРС Е1 = Е0 = UН.Х. з опором R = R0 + R3 і виміряти струм І3. Дані експериментів за¬нести в таблицю 2.2. 
+Для цього задаємо значення опору R3 (R = R0 + R3), а ключ SА1 (рисунок 2.7,а) перевести в положення 1, ключ SА2 (рисунок 2.7,а) перевести в положення 2, ключі SА3,  SА4, SR1- ввімкнути, а ключ SR3, SА5 – розімкнути.
+3.4. Для дослідження принципу взаємності виміряти струми у вітках кола (аналогічно як вказано в п.3.2, а):
+а) при дії одного джерела Е1;
+б) при дії одного джерела Е1 = Е2 .</value>
+  </data>
+  <data name="Label_part2_text.Text" xml:space="preserve">
+    <value>1. По результатах досліджень п.1…п.3 таблиці 2.2 переконатись у справедли¬вості принципу накладання та першого закону Кірхгофа.
+2. На підставі досліджень п.3.3 переконатись у справедливості теореми про еквівалентний генератор.
+3. По результатах досліджень п.3.4 обчислити вхідні та взаєм¬ні провідності віток вказані в таблиці 2.3 і переконатись у справед¬ливості принципу взаємності.
+4. На основі отриманих результатів дослідів та обчислень визначте струми у вітках вашої електричної схеми застосувавши метод безпосереднього використання законів Кірхгофа, метод контурних струмів, метод двох вузлів,  метод еквівалентного генератора.
+ 5. Зробити висновки про виконану роботу.</value>
+  </data>
+</root>
