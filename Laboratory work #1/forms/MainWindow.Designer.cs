@@ -68,6 +68,7 @@
             menuStrip1 = new MenuStrip();
             теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
             порядокВиконанняToolStripMenuItem = new ToolStripMenuItem();
+            тестовіЗапитанняToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -422,7 +423,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { теоритичніВідомостіToolStripMenuItem, порядокВиконанняToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { теоритичніВідомостіToolStripMenuItem, порядокВиконанняToolStripMenuItem, тестовіЗапитанняToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1204, 24);
@@ -442,6 +443,13 @@
             порядокВиконанняToolStripMenuItem.Size = new Size(129, 20);
             порядокВиконанняToolStripMenuItem.Text = "Порядок виконання";
             порядокВиконанняToolStripMenuItem.Click += порядокВиконанняToolStripMenuItem_Click;
+            // 
+            // тестовіЗапитанняToolStripMenuItem
+            // 
+            тестовіЗапитанняToolStripMenuItem.Name = "тестовіЗапитанняToolStripMenuItem";
+            тестовіЗапитанняToolStripMenuItem.Size = new Size(117, 20);
+            тестовіЗапитанняToolStripMenuItem.Text = "Тестові запитання";
+            тестовіЗапитанняToolStripMenuItem.Click += тестовіЗапитанняToolStripMenuItem_Click;
             // 
             // MainWindow
             // 
@@ -518,5 +526,6 @@
         private TextBox TextBoxResultPw;
         private Label LabelPw;
         private ToolStripMenuItem порядокВиконанняToolStripMenuItem;
+        private ToolStripMenuItem тестовіЗапитанняToolStripMenuItem;
     }
 }

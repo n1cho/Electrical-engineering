@@ -290,5 +290,11 @@ namespace Laboratory_work__1
             ProcedureWindow ProcedureWindow = new ProcedureWindow();
             ProcedureWindow.Show();
         }
+
+        private void тестовіЗапитанняToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TestWindow TestWindow = new TestWindow();
+            TestWindow.Show();
+        }
     }
 }
