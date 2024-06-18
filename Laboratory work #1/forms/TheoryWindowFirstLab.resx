@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LabelSubpart1Text1.Text" xml:space="preserve">
+    <value>Лабораторний стенд містить джерела електричної енергії, набірне поле, пасивні елементи.
+Джерела електричної енергії розташовані в лівій частині стенду (рисунок 1.1,а,б) і конструктивно виконані у вигляді трьох окремих блоків. Блок постійних напруг містить джерело нерегульованої напруги U1 = 20 В і джерело регульованої напруги U2 = 0…25 В. Крім двох джерел, в цьому ж блоці міститься електронний ключ. 
+Блок змінної напруги забезпечує синусоїдну, трикутну і прямокутну форми напруги в межах 5…25 В, частотою 100…900 Гц.</value>
+  </data>
+  <data name="LabelSubpart1Text2.Text" xml:space="preserve">
+    <value>Блок трифазної напруги являє собою трифазне джерело з незалежними фазами, напруги яких регулюються від 0 до 40 В (частота 50 Гц). Початки фаз позначені зірочками.
+Всі джерела обладнані електронним захистом, який вмикається при перевищенні струму - 1A. Дія захисту знімається натисканням кнопки захисту після усунення причини його спрацювання. Набірне поле, що розташоване в центрі стенду, дозволяє скласти за допомогою провідників досліджуване електричне коло. Пасивні елементи, що змонтовані у вигляді трьох блоків, знаходяться в правій частині стенду.
+Блок змінного опору містить в собі чотири резистивних елементи, три з яких (R1, R2, R3) мають постійні значення опору, а значення опору резистивного елементу R4 може бути встановлено в межах 1…999 Ом.
+Блок змінної індуктивності складається з трьох нерегульованих (L1, L2, L3,) і одного регульованого (L4 = 0,1…99,9 мГн) індуктивних елементів. Індуктивні елементи L1 і L2 магнітозв’язані. Їх початки позначені зірочками.
+Блок змінної ємності містить чотири ємнісних елементи, три з яких (С1, С2, С3) нерегульовані, а ємність четвертого елементу (С4) може бути встановлена в межах від 0,01 до 9,99 мкФ.
+Прилади, що вмонтовані в блоки живлення, призначенні лише для контролю роботи джерел. Вимірювання електричних величин здійснюється за допомогою стрілкових і цифрових приладів (рисунок 1.1, в – застосовується для вимірювання, опору, напруги, струму), що входять в комплект стенду.
+Значення величин, вимірюваних цифровими приладами, відображається безпосередньо на цифровому індикаторі.
+Для правильного відліку значень величин, вимірюваних стрілковими приладами, потрібно попередньо визначити ціну поділки, яка дорівнює відношенню граничного значення вимірюваної величини до кількості поділок його шкали. Ціна поділки амперметра, вольтметра і ватметра визначається відповідно : </value>
+  </data>
+  <data name="LabelSubpart1Text3.Text" xml:space="preserve">
+    <value>де Iн, Uн – граничні значення струму і напруги, що можуть бути виміряні приладами;
+ni, nu, np – кількість поділок шкали відповідно амперметра, вольтметра і ватметра.
+Значення вимірюваних величин визначаються наступним чином: І = n*Сi; U = n*Сu;  P = n*Сp . 
+де n – число поділок шкали, яке відповідає значенню вимірюваної величини.</value>
+  </data>
+  <data name="LabelSubpart2Text1.Text" xml:space="preserve">
+    <value>При виконанні лабораторних робіт «online», студенти зобов’язані ознайомитися з описом реального робочого лабораторного стенду, теоретичним матеріалом необхідним для виконання досліджень з даної теми, використати відповідне методичне забезпечення для проведення даної лабораторної роботи, імітаційні роботи для ознайомлення з порядком роботи, приблизними отриманими значення показів приладів та методикою збирання електричної схеми на лабораторному стенді, а також з одним із програмних продуктів (вказаним викладачем): програмою Multisim; програмним продуктом «Для проведення онлайн робіт» розроблених у співпраці викладачів кафедри із студентом, https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_en.html; 
+Оскільки, експериментальне дослідження лінійного розгалуженого електричного кола постійного струму з одним джерелом ЕРС виконуватиметься «online» з використанням програмного продукту «Для проведення онлайн робіт», який можна застосовувати для виконання декількох лабораторних робіт (Загальний вигляд онлайн панелі для виконання лабораторних робіт зображений на рисунку 1.2,а, а загальна робоча електрична схема показана на рисунку 1.2,б. Це необхідно врахувати студентам при підготовці бланку лабораторної роботи, тобто, яке методичне забезпечення треба вибрати для виконання роботи (вказується викладачем). 
+При дослідженні електричних кіл з послідовним, паралельним, змішаним ввімкненням резисторів із застосуванням програмного продукту «Для проведення онлайн робіт» розроблених кафедрою застосовується загальна робоча електрична схема зображена на рисунку 1.2,б і на її базі, необхідно скласти електричні кола зображені на рисунках (рисунок 1.4,а (рисунок 1.4,б й рисунок 1.4,в); рисунок 1.5,а (рисунок 1.5,б); рисунок 1.6; рисунок 1.7), а збирати електричні кола і їх досліджувати необхідно почергово. Для виконання лабораторної роботи «online» значення ЕРС Е1 та резисторів R1, R2, R3  вказано в таблиці 1.1. Необхідно визначити струми у вітках досліджуваного кола і для цього треба занести в таблицю 1.2 значення спадів напруг UR1, UR2, UR3 на резисторах R1, R2, R3 та потужність, яку споживає електричне коло (тобто записати дані показів ватметра).</value>
+  </data>
+  <data name="LabelPicture2_2.Text" xml:space="preserve">
+    <value>Рисунок 1.2 – Загальний вигляд онлайн панелі лабораторної роботи із застосуванням
+                       програмного продукту «Для проведення «online»  робіт» а) 
+                       та загальна робоча електрична схема б)</value>
+  </data>
+</root>

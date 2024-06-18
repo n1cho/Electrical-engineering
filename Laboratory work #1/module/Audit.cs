@@ -23,6 +23,7 @@ namespace Audits
                     {
                         if (Switches[4] && !Switches[3]) { result = "VariousSupportsR2R3"; }
                         else if (!Switches[4] && Switches[3]) { result = "VariousSupportsR1R2"; }
+                        else if (Switches[4] && Switches[3]) { result = "VariousSupportsR2"; }
                         else {
                             if (Type == 'i') { result = "DefaultERS1I"; }
                             else if (Type == 'r') { result = "DefaultERS1R"; }

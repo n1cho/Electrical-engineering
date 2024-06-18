@@ -1,6 +1,6 @@
 ﻿namespace Laboratory_work__1
 {
-    partial class TheoryWindow
+    partial class TheoryWindowSecondLab
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheoryWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TheoryWindowSecondLab));
             Label_tittle = new Label();
             Label_meta = new Label();
             Label_tittle_part1 = new Label();
@@ -92,7 +92,7 @@
             Label_tittle.Name = "Label_tittle";
             Label_tittle.Size = new Size(404, 38);
             Label_tittle.TabIndex = 0;
-            Label_tittle.Text = "Лабораторна робота №1\r\nДослідження лінійного розгалуженого кола постійного струму\r\n";
+            Label_tittle.Text = "Лабораторна робота №2\r\nДослідження лінійного розгалуженого кола постійного струму\r\n";
             Label_tittle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Label_meta
@@ -470,7 +470,7 @@
             Label_name_picture1_7_2.TabIndex = 38;
             Label_name_picture1_7_2.Text = "Рисунок 2.7 –  Загальна робоча електрична схема";
             // 
-            // TheoryWindow
+            // TheoryWindowSecondLab
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -515,8 +515,8 @@
             Controls.Add(Label_tittle_part1);
             Controls.Add(Label_meta);
             Controls.Add(Label_tittle);
-            Name = "TheoryWindow";
-            Text = "Лабораторна робота №1. Теоритичні відомості";
+            Name = "TheoryWindowSecondLab";
+            Text = "Лабораторна робота №2. Теоретичні відомості";
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_1).EndInit();
             ((System.ComponentModel.ISupportInitialize)TheoryPicture1_2).EndInit();
             ((System.ComponentModel.ISupportInitialize)TheoryFormula1_1).EndInit();
