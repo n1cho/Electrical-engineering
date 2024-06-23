@@ -279,12 +279,6 @@ namespace Laboratory_work__1
             }
         }
 
-        private void порядокВиконанняToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ProcedureWindow ProcedureWindow = new ProcedureWindow();
-            ProcedureWindow.Show();
-        }
-
         private void тестовіЗапитанняToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TestWindow TestWindow = new TestWindow();
@@ -302,5 +296,18 @@ namespace Laboratory_work__1
             TheoryWindowSecondLab TheoryWindowSecondLab = new TheoryWindowSecondLab();
             TheoryWindowSecondLab.Show();
         }
+
+        private void лабораторнаРобота1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcedureWindowFirstLab ProcedureWindowFirstLab = new ProcedureWindowFirstLab();
+            ProcedureWindowFirstLab.Show();
+        }
+
+        private void лабораторнаРобота2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcedureWindowSecondLab ProcedureWindowSecondLab = new ProcedureWindowSecondLab();
+            ProcedureWindowSecondLab.Show();
+        }
+
     }
 }

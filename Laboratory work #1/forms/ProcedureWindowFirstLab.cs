@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Laboratory_work__1
 {
-    public partial class ProcedureWindow : Form
+    public partial class ProcedureWindowFirstLab : Form
     {
-        public ProcedureWindow()
+        public ProcedureWindowFirstLab()
         {
             InitializeComponent();
         }

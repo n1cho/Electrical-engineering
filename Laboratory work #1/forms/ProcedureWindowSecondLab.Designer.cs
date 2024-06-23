@@ -1,6 +1,6 @@
 ﻿namespace Laboratory_work__1
 {
-    partial class ProcedureWindow
+    partial class ProcedureWindowSecondLab
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcedureWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcedureWindowSecondLab));
             Label_part1 = new Label();
             Label_part1_text1 = new Label();
             TheoryPicture2_8 = new PictureBox();
@@ -142,7 +142,7 @@
             Label_part2_text.TabIndex = 9;
             Label_part2_text.Text = resources.GetString("Label_part2_text.Text");
             // 
-            // ProcedureWindow
+            // ProcedureWindowSecondLab
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -158,8 +158,8 @@
             Controls.Add(TheoryPicture2_8);
             Controls.Add(Label_part1_text1);
             Controls.Add(Label_part1);
-            Name = "ProcedureWindow";
-            Text = "Лабораторна робота №1. Порядок виконання";
+            Name = "ProcedureWindowSecondLab";
+            Text = "Лабораторна робота №2. Порядок виконання";
             ((System.ComponentModel.ISupportInitialize)TheoryPicture2_8).EndInit();
             ((System.ComponentModel.ISupportInitialize)TablePicture1).EndInit();
             ((System.ComponentModel.ISupportInitialize)TablePicture2).EndInit();

@@ -70,6 +70,8 @@
             лабораторнаРобота1ToolStripMenuItem = new ToolStripMenuItem();
             лабораторнаРобота2ToolStripMenuItem = new ToolStripMenuItem();
             порядокВиконанняToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота1ToolStripMenuItem1 = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem1 = new ToolStripMenuItem();
             тестовіЗапитанняToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
@@ -455,10 +457,24 @@
             // 
             // порядокВиконанняToolStripMenuItem
             // 
+            порядокВиконанняToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { лабораторнаРобота1ToolStripMenuItem1, лабораторнаРобота2ToolStripMenuItem1 });
             порядокВиконанняToolStripMenuItem.Name = "порядокВиконанняToolStripMenuItem";
             порядокВиконанняToolStripMenuItem.Size = new Size(129, 20);
             порядокВиконанняToolStripMenuItem.Text = "Порядок виконання";
-            порядокВиконанняToolStripMenuItem.Click += порядокВиконанняToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота1ToolStripMenuItem1
+            // 
+            лабораторнаРобота1ToolStripMenuItem1.Name = "лабораторнаРобота1ToolStripMenuItem1";
+            лабораторнаРобота1ToolStripMenuItem1.Size = new Size(211, 22);
+            лабораторнаРобота1ToolStripMenuItem1.Text = "Лабораторна робота №1";
+            лабораторнаРобота1ToolStripMenuItem1.Click += лабораторнаРобота1ToolStripMenuItem1_Click;
+            // 
+            // лабораторнаРобота2ToolStripMenuItem1
+            // 
+            лабораторнаРобота2ToolStripMenuItem1.Name = "лабораторнаРобота2ToolStripMenuItem1";
+            лабораторнаРобота2ToolStripMenuItem1.Size = new Size(211, 22);
+            лабораторнаРобота2ToolStripMenuItem1.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem1.Click += лабораторнаРобота2ToolStripMenuItem1_Click;
             // 
             // тестовіЗапитанняToolStripMenuItem
             // 
@@ -545,5 +561,7 @@
         private ToolStripMenuItem тестовіЗапитанняToolStripMenuItem;
         private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem;
         private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem;
+        private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem1;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem1;
     }
 }

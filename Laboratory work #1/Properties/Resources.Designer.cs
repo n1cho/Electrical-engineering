@@ -473,9 +473,49 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap theory_picture_2_3 {
+            get {
+                object obj = ResourceManager.GetObject("theory_picture_2_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap theory_picture_2_4 {
+            get {
+                object obj = ResourceManager.GetObject("theory_picture_2_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap theory_picture_2_5 {
+            get {
+                object obj = ResourceManager.GetObject("theory_picture_2_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap theory_table_1 {
             get {
                 object obj = ResourceManager.GetObject("theory_table_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap theory_table_1_2_1_3 {
+            get {
+                object obj = ResourceManager.GetObject("theory_table_1_2_1_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

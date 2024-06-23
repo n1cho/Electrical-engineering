@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LabelPartText1.Text" xml:space="preserve">
+    <value> 1.1. Зібрати електричне коло, згідно електричної схеми зображеної на рисунку 1.3,а на основі загальної робочої електричної схеми (рисунок1.2,б). Значення ЕРС Е1 та опору R1 при проведенні лабораторної роботи вибираємо з таблиці 1.1  (варіант вказується викладачем) і їхні значення заносимо у клітинки розміщені справа від схеми (рисунок 1.2,а). При цьому необхідно:
+- при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі  SА3, SА4, SR3 – ввімкнути, ключі SА5, SR1 – розімкнути;
+- визначаємо значення спаду напруг UR1 на резисторі R1, значення споживаної електричним колом потужності РW1. Дані записуємо в таблицю 1.2 (п.1) і визначити струм та потужність (таблиця 1.3).
+ 1.2. Аналогічно проводимо почергово досліди (2 і 3 таблиця 1.2) з опорами R2 та R3 зібравши електричні кола згідно рисунку 1.3,б та рисунку 1.3,в з використанням загальної робочої електричної схеми (рисунок1.2,б), як вказано в п.2.1. Тобто необхідно задати  значення опорів R2 та R3 й виміряти спади напруг UR2 та UR3 на резисторах R2 та R3, потужність в колі (РW2 й РW3). Результати вимірювань занести в таблицю 1.2 і визначити струм та потужність (таблиця 1.3).
+При цьому врахувати: 
+- (рисунок 1.3,б) - при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SА4, SА5, SR1 – ввімкнути, ключі SА3, SR3 – розімкнути;
+- визначаємо значення спаду напруг UR2 на резисторі R2, значення споживаної електричним колом потужності РW2. Дані записуємо в таблицю 1.2 (п.2) і визначити струм та потужність (таблиця 1.3).
+- (рисунок 1.3,в) - при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SR1, SА3, SА4, – ввімкнути, ключі SА5, SR3 – розімкнути.
+- визначаємо значення спаду напруг UR3 на резисторі R3, значення споживаної електричним колом потужності РW3. Дані записуємо в таблицю 1.2 (п.3) і визначити струм та потужність (таблиця 1.3).</value>
+  </data>
+  <data name="LabelPartText2.Text" xml:space="preserve">
+    <value>2.1. Зібрати електричне коло, згідно електричної схеми зображеної на рисунку 1.4,а (послідовно ввімкнені резистори R1 та R2) на основі загальної робочої електричної схеми (рисунок 1.2,б). Значення ЕРС Е1 та опорів R1, R2 при проведенні даного досліду вибираємо з таблиці 1.1 (дані вибираємо аналогічно, як і попередніх дослідах) і їхні значення заносимо у клітинки розміщені справа від схеми (рисунок 1.2,а). При цьому необхідно:
+- при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SА5, SА4 – ввімкнути, ключі SА3, SR1, SR3 – розімкнути.
+- визначаємо значення спаду напруг UR1, UR2 на резисторі R1, R2 значення споживаної електричним колом потужності РW. Дані записуємо в таблицю 1.2 (п.4) і визначити струм та потужність розсіювання кожним резистором тепла (таблиця 1.3).</value>
+  </data>
+  <data name="LabelPartText3.Text" xml:space="preserve">
+    <value>2.2 Аналогічно проводимо почергово дослід (дослід 5 таблиця 1.3) з опорами R1 та R3 (послідовно вмикаємо резистори R1 та R3) зібравши електричне коло згідно рисунку 1.4,б на основі загальної робочої електричної схеми (рисунок1.2,б). Тобто, необхідно задати  значення опорів R1 та R3 при проведенні даного досліду, вибираємо їхні значення з таблиці 1.1 (дані вибираємо аналогічно, як і попередніх дослідах) і їхні значення заносимо у клітинки розміщені справа від схеми (рисунок 1.2,а). Виміряти спади напруг UR1 та UR 3 на резисторах R1 та R3, потужність в колі РW. Результати вимірювань занести в таблицю 1.2 (п.5) і визначити струм та потужність розсіювання кожним резистором тепла (таблиця 1.3). При цьому необхідно:
+- при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SА3, SА4 – ввімкнути, ключі SR1, SR3, SА5 – розімкнути.
+3.1. Зібрати електричне коло згідно електричної схеми зображеної на рисунку 1.5 (паралельно ввімкнені резистори R2 та R3) на основі загальної робочої електричної схеми (рисунок 1.2,б). Значення ЕРС Е1 та опорів R2, R3 при проведенні даного досліду вибираємо з таблиці 1.1 (дані вибираємо аналогічно, як і попередніх дослідах) і їхні значення заносимо у клітинки розміщені справа від схеми (рисунок 1.2,а). При цьому необхідно:
+- при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SR1, SА3, SА4, SА5 – ввімкнути, ключі SR3 – розімкнути.
+- визначаємо значення спаду напруг UR2, UR3 на резисторі R2, R3 та значення споживаної електричним колом потужності РW. Дані записуємо в таблицю 1.2 (п.6) і визначити струм та потужність розсіювання кожним резистором тепла (таблиця 1.3).</value>
+  </data>
+  <data name="LabelPartText4.Text" xml:space="preserve">
+    <value>4.1. Зібрати електричне коло, згідно електричної схеми зображеної на рисунку 1.6 (резистори R2 та R3 ввімкнені паралельно, а резистор R1 ввімкнений з ними послідовно, тобто показана електрична схема із змішаним ввімкненням елементів) на основі загальної робочої електричної схеми (рисунок 1.2,б). Значення ЕРС Е1 та опорів R1, R2, R3 при проведенні даного досліду вибираємо з таблиці 1.1 (дані вибираємо аналогічно, як і попередніх дослідах) і їхні значення заносимо у клітинки розміщені справа від схеми (рисунок 1.2,а). При цьому необхідно:
+- при дії джерела ЕРС Е1 (ключ SА1 перевести в положення 1 (рисунок 1.2,а,б)) і відсутності джерела ЕРС Е2 (ключ SА2 перевести в положення 2 (рисунок 1.2,а,б)); 
+- ключі SА3, SА4, SА5 – ввімкнути, ключі SR1, SR3 – розімкнути.
+- визначаємо значення спаду напруг UR1, UR2, UR3 на резисторі R1, R2, R3 та значення споживаної електричним колом потужності РW. Дані записуємо в таблицю 1.2 (п.7) і визначити струм та потужність розсіювання кожним резистором тепла (таблиця 1.3).</value>
+  </data>
+</root>
