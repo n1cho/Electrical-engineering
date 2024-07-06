@@ -73,6 +73,8 @@
             лабораторнаРобота1ToolStripMenuItem1 = new ToolStripMenuItem();
             лабораторнаРобота2ToolStripMenuItem1 = new ToolStripMenuItem();
             тестовіЗапитанняToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота1ToolStripMenuItem2 = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem2 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -478,10 +480,24 @@
             // 
             // тестовіЗапитанняToolStripMenuItem
             // 
+            тестовіЗапитанняToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { лабораторнаРобота1ToolStripMenuItem2, лабораторнаРобота2ToolStripMenuItem2 });
             тестовіЗапитанняToolStripMenuItem.Name = "тестовіЗапитанняToolStripMenuItem";
             тестовіЗапитанняToolStripMenuItem.Size = new Size(117, 20);
             тестовіЗапитанняToolStripMenuItem.Text = "Тестові запитання";
-            тестовіЗапитанняToolStripMenuItem.Click += тестовіЗапитанняToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота1ToolStripMenuItem2
+            // 
+            лабораторнаРобота1ToolStripMenuItem2.Name = "лабораторнаРобота1ToolStripMenuItem2";
+            лабораторнаРобота1ToolStripMenuItem2.Size = new Size(211, 22);
+            лабораторнаРобота1ToolStripMenuItem2.Text = "Лабораторна робота №1";
+            лабораторнаРобота1ToolStripMenuItem2.Click += лабораторнаРобота1ToolStripMenuItem2_Click;
+            // 
+            // лабораторнаРобота2ToolStripMenuItem2
+            // 
+            лабораторнаРобота2ToolStripMenuItem2.Name = "лабораторнаРобота2ToolStripMenuItem2";
+            лабораторнаРобота2ToolStripMenuItem2.Size = new Size(211, 22);
+            лабораторнаРобота2ToolStripMenuItem2.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem2.Click += лабораторнаРобота2ToolStripMenuItem2_Click;
             // 
             // MainWindow
             // 
@@ -563,5 +579,7 @@
         private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem;
         private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem1;
         private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem1;
+        private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem2;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem2;
     }
 }

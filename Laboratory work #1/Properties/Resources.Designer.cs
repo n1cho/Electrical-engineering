@@ -263,9 +263,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_1 {
+        internal static System.Drawing.Bitmap quest_1_1_12 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_1", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_3 {
+        internal static System.Drawing.Bitmap quest_1_1_13 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_3", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_4 {
+        internal static System.Drawing.Bitmap quest_1_1_14 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_4", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_5 {
+        internal static System.Drawing.Bitmap quest_1_1_16 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_5", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_6 {
+        internal static System.Drawing.Bitmap quest_1_1_2 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_6", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_7 {
+        internal static System.Drawing.Bitmap quest_1_1_8 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_7", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_1_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_1_9 {
+        internal static System.Drawing.Bitmap quest_1_2_11 {
             get {
-                object obj = ResourceManager.GetObject("quest_1_9", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_2_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_2_2 {
+        internal static System.Drawing.Bitmap quest_1_2_2 {
             get {
-                object obj = ResourceManager.GetObject("quest_2_2", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_2_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +343,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_2_5 {
+        internal static System.Drawing.Bitmap quest_1_2_9 {
             get {
-                object obj = ResourceManager.GetObject("quest_2_5", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_1_2_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_2_6 {
+        internal static System.Drawing.Bitmap quest_2_1_1 {
             get {
-                object obj = ResourceManager.GetObject("quest_2_6", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,9 +363,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_3_2 {
+        internal static System.Drawing.Bitmap quest_2_1_3 {
             get {
-                object obj = ResourceManager.GetObject("quest_3_2", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +373,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_3_5 {
+        internal static System.Drawing.Bitmap quest_2_1_4 {
             get {
-                object obj = ResourceManager.GetObject("quest_3_5", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_3_7 {
+        internal static System.Drawing.Bitmap quest_2_1_5 {
             get {
-                object obj = ResourceManager.GetObject("quest_3_7", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +393,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_4_1 {
+        internal static System.Drawing.Bitmap quest_2_1_6 {
             get {
-                object obj = ResourceManager.GetObject("quest_4_1", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +403,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_4_5 {
+        internal static System.Drawing.Bitmap quest_2_1_7 {
             get {
-                object obj = ResourceManager.GetObject("quest_4_5", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +413,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_4_6 {
+        internal static System.Drawing.Bitmap quest_2_1_9 {
             get {
-                object obj = ResourceManager.GetObject("quest_4_6", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_1_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,9 +423,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_4_7 {
+        internal static System.Drawing.Bitmap quest_2_2_2 {
             get {
-                object obj = ResourceManager.GetObject("quest_4_7", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_2_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +433,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_5_2 {
+        internal static System.Drawing.Bitmap quest_2_2_5 {
             get {
-                object obj = ResourceManager.GetObject("quest_5_2", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_2_5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +443,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_5_6 {
+        internal static System.Drawing.Bitmap quest_2_2_6 {
             get {
-                object obj = ResourceManager.GetObject("quest_5_6", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_2_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -453,9 +453,9 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_5_8 {
+        internal static System.Drawing.Bitmap quest_2_3_2 {
             get {
-                object obj = ResourceManager.GetObject("quest_5_8", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_3_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,9 +463,99 @@ namespace Laboratory_work__1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap quest_6_7 {
+        internal static System.Drawing.Bitmap quest_2_3_5 {
             get {
-                object obj = ResourceManager.GetObject("quest_6_7", resourceCulture);
+                object obj = ResourceManager.GetObject("quest_2_3_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_3_7 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_3_7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_4_1 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_4_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_4_5 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_4_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_4_6 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_4_6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_4_7 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_4_7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_5_2 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_5_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_5_6 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_5_6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_5_8 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_5_8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quest_2_6_7 {
+            get {
+                object obj = ResourceManager.GetObject("quest_2_6_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

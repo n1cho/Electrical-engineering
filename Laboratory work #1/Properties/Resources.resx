@@ -124,9 +124,6 @@
   <data name="dodatok_picture_1_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_picture_1.7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_4_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_4_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="dodatok_picture_1_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_picture_1.9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,9 +136,6 @@
   <data name="dodatok_formula_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_formula_1.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_6_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_6_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="theory_formula_2.1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_formula_2.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,35 +145,14 @@
   <data name="theory_picture_2_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_picture_2.3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_2_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="theory_picture_1_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_picture_1.6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_3_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_3_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_4_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_4_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_formula_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_formula_1.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_picture_1_7_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_picture_1.7.1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_3_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_3_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_1_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_5_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_5_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_formula_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_formula_1.2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,23 +163,11 @@
   <data name="theory_table_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_table_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="theory_table_1_2_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_table_1.2_1.3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_picture_1_7_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_picture_1.7.2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_1_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_5_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_5_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_2_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_2_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_picture_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_picture_1.3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,12 +181,6 @@
   <data name="table_picture_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\table_picture_1.2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_1_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_4_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_4_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="theory_formula_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_formula_1.3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,20 +193,8 @@
   <data name="theory_picture_2_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_picture_2.4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quest_2_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_2_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_1_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_5_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_5_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="theory_picture_2_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\theory_picture_2.5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_1_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_1_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theory_formula_1_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab2\theory_formula_1.4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -264,12 +207,6 @@
   </data>
   <data name="dodatok_picture_1_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_picture_1.8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_4_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_4_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="quest_3_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\picture\test picture\quest_3_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dodatok_formula_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_formula_1.2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -312,5 +249,95 @@
   </data>
   <data name="dodatok_picture_1_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\picture\lab1\dodatok_picture_1.22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_1_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_1_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_2_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_2_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_2_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_2_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_2_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_3_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_3_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_3_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_3_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_3_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_3_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_4_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_4_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_4_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_4_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_4_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_4_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_4_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_4_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_5_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_5_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_5_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_5_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_5_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_5_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_2_6_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab2\quest_2_6_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_1_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_1_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_2_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_2_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_2_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quest_1_2_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\picture\test picture\lab1\quest_1_2_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

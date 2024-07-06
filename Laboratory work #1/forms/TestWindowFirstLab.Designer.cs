@@ -1,6 +1,6 @@
-﻿namespace Laboratory_work__1
+﻿namespace Laboratory_work__1.forms
 {
-    partial class TestWindow
+    partial class TestWindowFirstLab
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             PanelQuestion = new Panel();
-            RadioButtonAnswer5 = new RadioButton();
             ButtonBack = new Button();
             ButtonNext = new Button();
             PictureQuestion = new PictureBox();
@@ -45,7 +44,6 @@
             // PanelQuestion
             // 
             PanelQuestion.BorderStyle = BorderStyle.FixedSingle;
-            PanelQuestion.Controls.Add(RadioButtonAnswer5);
             PanelQuestion.Controls.Add(ButtonBack);
             PanelQuestion.Controls.Add(ButtonNext);
             PanelQuestion.Controls.Add(PictureQuestion);
@@ -57,18 +55,7 @@
             PanelQuestion.Location = new Point(12, 12);
             PanelQuestion.Name = "PanelQuestion";
             PanelQuestion.Size = new Size(820, 475);
-            PanelQuestion.TabIndex = 0;
-            // 
-            // RadioButtonAnswer5
-            // 
-            RadioButtonAnswer5.AutoSize = true;
-            RadioButtonAnswer5.Location = new Point(80, 360);
-            RadioButtonAnswer5.Name = "RadioButtonAnswer5";
-            RadioButtonAnswer5.Size = new Size(146, 19);
-            RadioButtonAnswer5.TabIndex = 8;
-            RadioButtonAnswer5.TabStop = true;
-            RadioButtonAnswer5.Text = "radio_button_answer_5";
-            RadioButtonAnswer5.UseVisualStyleBackColor = true;
+            PanelQuestion.TabIndex = 1;
             // 
             // ButtonBack
             // 
@@ -92,7 +79,7 @@
             // 
             // PictureQuestion
             // 
-            PictureQuestion.Location = new Point(440, 120);
+            PictureQuestion.Location = new Point(400, 120);
             PictureQuestion.Name = "PictureQuestion";
             PictureQuestion.Size = new Size(100, 50);
             PictureQuestion.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -136,6 +123,7 @@
             // 
             RadionButtonAnswer1.AutoSize = true;
             RadionButtonAnswer1.Location = new Point(80, 120);
+            RadionButtonAnswer1.MaximumSize = new Size(600, 0);
             RadionButtonAnswer1.Name = "RadionButtonAnswer1";
             RadionButtonAnswer1.Size = new Size(146, 19);
             RadionButtonAnswer1.TabIndex = 1;
@@ -153,13 +141,13 @@
             LabelQuestion.TabIndex = 0;
             LabelQuestion.Text = "label_question";
             // 
-            // TestWindow
+            // TestWindowFirstLab
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(844, 501);
             Controls.Add(PanelQuestion);
-            Name = "TestWindow";
+            Name = "TestWindowFirstLab";
             Text = "Лабораторна робота №1. Тестові запитання";
             PanelQuestion.ResumeLayout(false);
             PanelQuestion.PerformLayout();
@@ -170,14 +158,13 @@
         #endregion
 
         private Panel PanelQuestion;
-        private Label LabelQuestion;
-        private RadioButton RadionButtonAnswer1;
-        private RadioButton RadioButtonAnswer3;
-        private RadioButton RadioButtonAnswer2;
+        private Button ButtonBack;
+        private Button ButtonNext;
         private PictureBox PictureQuestion;
         private RadioButton RadioButtonAnswer4;
-        private Button ButtonNext;
-        private Button ButtonBack;
-        private RadioButton RadioButtonAnswer5;
+        private RadioButton RadioButtonAnswer3;
+        private RadioButton RadioButtonAnswer2;
+        private RadioButton RadionButtonAnswer1;
+        private Label LabelQuestion;
     }
 }
