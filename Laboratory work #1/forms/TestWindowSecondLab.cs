@@ -1,14 +1,20 @@
-﻿namespace Laboratory_work__1
+﻿using Testings;
+
+namespace Laboratory_work__1
 {
-    public partial class TestWindow : Form
+    public partial class TestWindowSecondLab : Form
     {
         Random rnd = new Random();
+
+        Testing Testing = new Testing();
 
         Dictionary<string, int> Data = new Dictionary<string, int>()
         {
             { "Variant", 0 },
             { "Question", 0 },
-            { "GoodAnswer", 0 }
+            { "GoodAnswer", 0 },
+            { "Range", 8 },
+            { "Answers", 6 }
         };
 
         string[,,] questions = {
@@ -22,7 +28,7 @@
                     "в) Е = 60 В,U  = 56 В;",
                     "г) U  = 208 В,І  = 10 А;",
                     "д) U  = 204 В,І  = 0 А.",
-                    "quest_1_1"
+                    "quest_2_1_1"
                 },
                 { // question 1.2 
                     "Вкажіть формулу для визначення опору провідника:",
@@ -41,7 +47,7 @@
                     "в) U  = 100 В,Р  = 200 Вт;",
                     "г) U  = 150 В,Р  = 300 Вт;",
                     "д) U  = 200 В,Р  = 800 Вт.",
-                    "quest_1_3"
+                    "quest_2_1_3"
                 },
                 { // question 1.4
                     "Вкажіть схему правильного ввімкнення вимірювальних приладів ( амперметра,  вольтметра,  ватметра )  " +
@@ -51,7 +57,7 @@
                     "в) Рисунок 3.",
                     "none",
                     "none",
-                    "quest_1_4"
+                    "quest_2_1_4"
                 },
                 { // question 1.5
                     "Визначити  еквівалентний  опір  електричної  схеми  постійного  струму  до  і  після " +
@@ -62,7 +68,7 @@
                     "в) 18 Ом,30 Ом;",
                     "г) 24 Ом,10 Ом;",
                     "д) 6 Ом,3 Ом.",
-                    "quest_1_5"
+                    "quest_2_1_5"
                 },
                 { // question 1.6 -- 7
                     "Яке з приведених рівнянь відповідає рисунку?  Вкажіть  правильну відповідь:",
@@ -71,7 +77,7 @@
                     "в) I3 + I4 - I1 - I2 = 0;",
                     "г) I1 + I2 + I3 + I4 = 0.",
                     "none",
-                    "quest_1_6"
+                    "quest_2_1_6"
                 },
                 { // question 1.7 -- 8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур1)? Вкажіть  правильну відповідь:",
@@ -80,7 +86,7 @@
                     "в) I1 R1 + I5 (R2 + R4 + R5)  = E1;",
                     "г)  –I1 (R1 + R3) – I5 R5 = –E1. ",
                     "none",
-                    "quest_1_7"
+                    "quest_2_1_7"
                 },
                 { // question 1.8 -- 9
                     "Електричне коло постійного струму споживає потужність Р = 4800 Вт. " +
@@ -91,7 +97,7 @@
                     "в) І2 = 5 А,U = 120 В;",
                     "г) І2 = 4 А,U = 480 В.",
                     "none",
-                    "quest_1_9"
+                    "quest_2_1_9"
                 }
             },
             { // variant 2
@@ -105,7 +111,7 @@
                     "в) Е = 60 В,U = 23 В;",
                     "г) U = 208 В,І = 1 А;",
                     "д) U  = 204 В,І = 10 А",
-                    "quest_1_1"
+                    "quest_2_1_1"
                 },
                 { // question 2.2 
                     "В електричному колі постійного струму при розімкненому вимикачі S1 покази вольтметра дорівнюють " +
@@ -116,7 +122,7 @@
                     "в) R1 = 10 Ом,Iкз =1А;",
                     "г) R1 = 15 Ом,   Iкз =10А.",
                     "none",
-                    "quest_2_2"
+                    "quest_2_2_2"
                 },
                 { // question 2.3
                     "Визначте  покази  вольтметра  в  електричному  колі постійного струму, внутрішній " +
@@ -127,7 +133,7 @@
                     "в) U = 100 В,RВ = 2 Ом;",
                     "г) U = 200 В,RВ = 8 Ом.",
                     "none",
-                    "quest_1_3"
+                    "quest_2_1_3"
                 },
                 { // question 2.4
                     "Вкажіть схему правильного ввімкнення вимірювальних приладів " +
@@ -138,7 +144,7 @@
                     "в) Рисунок 3.",
                     "none",
                     "none",
-                    "quest_1_4"
+                    "quest_2_1_4"
                 },
                 { // question 2.5
                     "Визначити  еквівалентний  опір  електричної  схеми   постійного  струму  до  " +
@@ -149,7 +155,7 @@
                     "в) 36 Ом;",
                     "г) 14 Ом;",
                     "д) 6 Ом.",
-                    "quest_2_5"
+                    "quest_2_2_5"
                 },
                 { // question 2.6
                     "Вкажіть  правильне визначення другого закону Кірхгофа . Алгебраїчна  сума " +
@@ -168,7 +174,7 @@
                     "в) I1 + I4  - I2 - I3 = 0;",
                     "г) I1 + I2 + I3 + I4 = 0.",
                     "none",
-                    "quest_2_6"
+                    "quest_2_2_6"
                 },
                 { // question 2.8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур1)? " +
@@ -178,7 +184,7 @@
                     "в) I1 R1 + I5 (R2 + R4 + R5) = E1;",
                     "г)  – I1 (R1 + R3) – I5 R5 = –E1.",
                     "none",
-                    "quest_1_9"
+                    "quest_2_1_9"
                 }
             },
             { // variant 3
@@ -192,7 +198,7 @@
                     "в) R1 = 10 Ом,Iкз = 1А;",
                     "г) R1 = 15 Ом,Iкз = 10А.",
                     "none",
-                    "quest_2_2"
+                    "quest_2_2_2"
                 },
                 { // question 3.2 
                     "Визначити еквівалентний опір електричної схеми до ввімкнення вимикача  S1, " +
@@ -202,7 +208,7 @@
                     "в) 2R / 3;",
                     "г) 4R / 3;",
                     "д) 3R / 2.",
-                    "quest_3_2"
+                    "quest_2_3_2"
                 },
                 { // question 3.3
                     "Якими даними необхідно володіти, щоб визначити довжину витка дроту, " +
@@ -210,7 +216,7 @@
                     "а) U, I, S;",
                     "б) U, S, ρ;",
                     "в) I, S, ρ;",
-                    "г)U, I, S, ρ",
+                    "г) U, I, S, ρ",
                     "none",
                     "none"
                 },
@@ -223,7 +229,7 @@
                     "в) U = 100 В,RВ = 2 Ом;",
                     "г) U = 200 В,RВ = 8 Ом.",
                     "none",
-                    "quest_1_3"
+                    "quest_2_1_3"
                 },
                 { // question 3.5
                     "Визначити  еквівалентний  опір  електричної  схеми  постійного  струму  до  і  " +
@@ -234,7 +240,7 @@
                     "в) 16 Ом,8 Ом;",
                     "г) 3 Ом,12 Ом.",
                     "none",
-                    "quest_3_5"
+                    "quest_2_3_5"
                 },
                 { // question 3.6
                     "Який з провідників однакового перерізу і виготовлений з одного і того ж матеріалу, " +
@@ -254,7 +260,7 @@
                     "в) I3 + I4 - I1 - I2 = 0; ",
                     "г) I1 - I2 + I3 + I4 = 0.",
                     "none",
-                    "quest_3_7"
+                    "quest_2_3_7"
                 },
                 { // question 3.8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур 2)? Вкажіть  правильну відповідь:",
@@ -263,7 +269,7 @@
                     "в)  I1 R1 + I5 (R2 + R4 + R5)  = E1;",
                     "г)  I2 (R2 + R4) – I5 R5 = –E2.",
                     "none",
-                    "quest_1_7"
+                    "quest_2_1_7"
                 }
             },
             { // variant 4
@@ -276,7 +282,7 @@
                     "в) 1,1Ом;",
                     "г) 2,2 Ом.",
                     "none",
-                    "quest_4_1"
+                    "quest_2_4_1"
                 },
                 { // question 4.2 
                     "Визначити  покази  вольтметра,   ватметра  в  електричному  колі  " +
@@ -287,7 +293,7 @@
                     "в) U = 100 В,Р = 200 Вт ;",
                     "г) U = 150 В,Р = 300 Вт;",
                     "д) U = 200 В,Р = 800 Вт.",
-                    "quest_1_3"
+                    "quest_2_1_3"
                 },
                 { // question 4.3
                     "Визначити  еквівалентний  опір  електричної схеми постійного  струму  до  ввімкнення " +
@@ -297,7 +303,7 @@
                     "в) 36 Ом;",
                     "г) 14 Ом;",
                     "д) 6 Ом.",
-                    "quest_2_5"
+                    "quest_2_2_5"
                 },
                 { // question 4.4
                     "Щодня працювали протягом 16 год.  електродвигун вентилятора потужністю 2,0 кВт " +
@@ -320,7 +326,7 @@
                     "в) Збільшиться;",
                     "г) Зменшиться.",
                     "none",
-                    "quest_4_5"
+                    "quest_2_4_5"
                 },
                 { // question 4.6
                     "Яке з приведених рівнянь відповідає рисунку? Вкажіть  правильну відповідь:",
@@ -329,7 +335,7 @@
                     "в) I3 + I4 - I1 - I2 = 0;",
                     "г) I1 + I2 + I3 + I4 = 0.",
                     "none",
-                    "quest_4_6"
+                    "quest_2_4_6"
                 },
                 { // question 4.7
                     "Потужність кожної лампи Р = 40 Вт. Визначити потужність, яку споживає електричне коло " +
@@ -340,7 +346,7 @@
                     "в) Р = 40 Вт;",
                     "г) Р = 80 Вт.",
                     "none",
-                    "quest_4_7"
+                    "quest_2_4_7"
                 },
                 { // question 4.8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур1)? Вкажіть  правильну відповідь:",
@@ -349,7 +355,7 @@
                     "в)  I1 R1 + I5 (R2 + R4 + R5)  = E1;",
                     "г)  – I1 (R1 + R3) – I5 R5 = –E1.",
                     "none",
-                    "quest_1_7"
+                    "quest_2_1_7"
                 }
             },
             { // variant 5
@@ -361,7 +367,7 @@
                     "в) U = 220 В;",
                     "г) U = 260 В;",
                     "д) U  = 0 В.",
-                    "quest_2_2"
+                    "quest_2_2_2"
                 },
                 { // question 5.2 
                     "Визначте покази амперметра А1, вольтметра та ЕРС електричної схеми постійного струму, якщо " +
@@ -371,7 +377,7 @@
                     "в) І = 2,5А, U = 20 В, Е = 40 В;",
                     "г) І = 10А, U = 30 В, Е = 20 В;",
                     "д) І = 5А, U = 10 В, Е = 30 В.",
-                    "quest_5_2"
+                    "quest_2_5_2"
                 },
                 { // question 5.3
                     "Вкажіть схему правильного ввімкнення вимірювальних приладів ( амперметра,  вольтметра, " +
@@ -381,7 +387,7 @@
                     "в) Рисунок 3.",
                     "none",
                     "none",
-                    "quest_1_4"
+                    "quest_2_1_4"
                 },
                 { // question 5.4
                     "Щодня працювали протягом 16 год.  електродвигун вентилятора потужністю 2,0 кВт і " +
@@ -413,7 +419,7 @@
                     "в) 120 В;",
                     "г) 60 В.",
                     "none",
-                    "quest_5_6"
+                    "quest_2_5_6"
                 },
                 { // question 5.7
                     "Яке з приведених рівнянь відповідає рисунку? Вкажіть  правильну відповідь:",
@@ -422,7 +428,7 @@
                     "в) I3 + I4 - I1 - I2 = 0;",
                     "г) I1 + I2 + I3 + I4 = 0.",
                     "none",
-                    "quest_4_6"
+                    "quest_2_4_6"
                 },
                 { // question 5.8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур 1)? " +
@@ -432,7 +438,7 @@
                     "в) – I1 R1 + I5 (R2 + R4 + R5)  = E1;",
                     "г) I2 (R2 + R4) – I5 R5 – I1 (R1 + R3) = – E2.",
                     "none",
-                    "quest_5_8"
+                    "quest_2_5_8"
                 }
             },
             { // variant 6
@@ -446,7 +452,7 @@
                     "в) UV S1-розім. = 40В, UV S1-замк. = 36В, Iкз = 20А;",
                     "г) UV S1-розім. = 44В, UV S1-замк. = 40В, Iкз = 2А.",
                     "none",
-                    "quest_2_2"
+                    "quest_2_2_2"
                 },
                 { // question 6.2 
                     "Визначити еквівалентний опір електричної схеми постійного струму й ЕРС та покази " +
@@ -457,7 +463,7 @@
                     "в) І = 2,5А, U = 20 В, Е = 40 В, RЕ = 18 Ом;",
                     "г) І = 10А, U = 30 В, Е = 20 В, RЕ = 8 Ом;",
                     "д) І = 5А, U = 10 В, Е = 30 В, RЕ = 6 Ом.",
-                    "quest_5_2"
+                    "quest_2_5_2"
                 },
                 { // question 6.3
                     "Визначити еквівалентний опір електричної схеми постійного струму до і після " +
@@ -467,7 +473,7 @@
                     "в) 16 Ом,8 Ом;",
                     "г) 3 Ом,12 Ом.",
                     "none",
-                    "quest_3_5"
+                    "quest_2_3_5"
                 },
                 { // question 6.4
                     "Яку кількість рівнянь необхідно скласти для даного електричного кола за першим й " +
@@ -477,7 +483,7 @@
                     "в)  6, 3;",
                     "г)  8, 4 ",
                     "none",
-                    "quest_5_8"
+                    "quest_2_5_8"
                 },
                 { // question 6.5
                     "Потужність кожної лампи Р = 40 Вт. Визначити потужність, яку споживає електричне коло " +
@@ -488,7 +494,7 @@
                     "в) Р = 40 Вт;",
                     "г) Р = 80 Вт.",
                     "none",
-                    "quest_4_7"
+                    "quest_2_4_7"
                 },
                 { // question 6.6
                     "Якими даними необхідно володіти, щоб визначити довжину витка дроту, не розмотуючи його? " +
@@ -507,7 +513,7 @@
                     "в) - I1 - I2  - I3 - I4 + I5 = 0;",
                     "г) I3 + I4 - I1 - I2 + I5 = 0.",
                     "none",
-                    "quest_6_7"
+                    "quest_2_6_7"
                 },
                 { // question 6.8
                     "Яке з приведених рівнянь відповідає даній електричній схемі (контур 2)? Вкажіть  правильну відповідь:",
@@ -516,12 +522,12 @@
                     "в) I1 R1 + I5 (R2 + R4 + R5)  = E1;",
                     "г)  I2 (R2 + R4) – I5 R5 = –E2.",
                     "none",
-                    "quest_1_7"
+                    "quest_2_1_7"
                 }
             }
         };
 
-        char[] GetAnswer = new char[8];
+        char[] Answers = new char[9];
         char[,] GoodAnswers =
         {
             {'а','б','д','а','а','б','г','г'}, // variant 1
@@ -531,75 +537,47 @@
             {'а','а','а','б','б','г','а','а'}, // variant 5
             {'в','а','в','б','б','г','в','г'}  // variant 6
         };
-        public TestWindow()
+        public TestWindowSecondLab()
         {
             InitializeComponent();
             RadioButton[] Buttons = { RadionButtonAnswer1, RadioButtonAnswer2,
                 RadioButtonAnswer3, RadioButtonAnswer4, RadioButtonAnswer5};
             Data["Variant"] = rnd.Next(6);
-            ChangeQuestion(Data["Variant"], Data["Question"], Buttons, LabelQuestion, PictureQuestion);
+            Testing.ChangeQuestion(Data, questions, Buttons, LabelQuestion, PictureQuestion);
         }
 
-        public void ChangeQuestion(int Variant, int Question, RadioButton[] Buttons, Label Title, PictureBox Picture)
-        {
-            if (Data["Question"] < 8)
-            {
-                Title.Text = questions[Variant, Question, 0];
-                for (int i = 1; i < 6; i++)
-                {
-                    if (questions[Variant, Question, i] == "none")
-                    {
-                        Buttons[i - 1].Visible = false;
-                    }
-                    else
-                    {
-                        if (!Buttons[i - 1].Visible) { Buttons[i - 1].Visible = true; }
-                        Buttons[i - 1].Text = questions[Variant, Question, i];
-                    }
-                }
-                if (questions[Variant, Question, 6] != "none")
-                {
-                    if (!Picture.Visible) { Picture.Visible = true; }
-                    Picture.Image = Properties.Resources.ResourceManager.GetObject(
-                        questions[Variant, Question, 6]) as Image;
-                }
-                else
-                {
-                    Picture.Visible = false;
-                }
-            }
-        }
-
+        
         private void ButtonNext_Click(object sender, EventArgs e)
         {
             RadioButton[] Buttons = { RadionButtonAnswer1, RadioButtonAnswer2,
                 RadioButtonAnswer3, RadioButtonAnswer4, RadioButtonAnswer5};
-            if (Data["Question"] < 8)
+            if (Data["Question"] < Data["Range"])
             {
-                CheckAnswer('w', Data["Question"], Buttons);
-                if (Data["Question"] == 6)
+                if (Data["Question"] == Data["Range"] - 1)
                 {
                     Data["Question"] += 1;
                     ButtonNext.Text = "Закінчити";
                 }
                 else
                 {
+                    Testing.CheckAnswer('w', Data, Answers, Buttons);
                     if (!ButtonBack.Visible) { ButtonBack.Visible = true; };
                     Data["Question"] += 1;
+                    if (Data["Question"] < Data["Range"]) { Testing.CheckAnswer('c', Data, Answers, Buttons); }
                 }
-                ChangeQuestion(Data["Variant"], Data["Question"], Buttons, LabelQuestion, PictureQuestion);
-            } else if (Data["Question"] == 8)
+                Testing.ChangeQuestion(Data, questions, Buttons, LabelQuestion, PictureQuestion);
+            }
+            else if (Data["Question"] == Data["Range"])
             {
                 PanelQuestion.Controls.Clear();
-                int Result = GetResult(GetAnswer, GoodAnswers, Data["Variant"]);
+                int Result = Testing.GetResult(Answers, GoodAnswers, Data);
                 Label ResultLabel = new Label();
                 PanelQuestion.Controls.Add(ResultLabel);
                 ResultLabel.Location = new Point(250, 100);
                 ResultLabel.Size = new Size(300, 200);
                 ResultLabel.TextAlign = ContentAlignment.MiddleCenter;
-                ResultLabel.Text = "Ви закінчили тест.\nВаш результат: " + Convert.ToString(Result) + "/8. " +
-                    "Це " + ((Result*100)/8) + "% правильних відповідей";
-
+                ResultLabel.Text = "Ви закінчили тест.\nВаш результат: " + Convert.ToString(Result) + "/" + Convert.ToString(Data["Range"]) + ". " +
+                    "Це " + ((Result * 100) / (Data["Range"])) + "% правильних відповідей";
             }
         }
 
@@ -617,39 +595,8 @@
                 if (ButtonNext.Text == "Закінчити") { ButtonNext.Text = "Наступне"; }
                 Data["Question"] -= 1;
             }
-            CheckAnswer('c', Data["Question"], Buttons);
-            ChangeQuestion(Data["Variant"], Data["Question"], Buttons, LabelQuestion, PictureQuestion);
-        }
-
-        private void CheckAnswer(char Type,int Question, RadioButton[] Buttons)
-        {
-            char[] Letter = { 'а', 'б', 'в', 'г', 'д' };
-            if (Type == 'w')
-            {
-                for (int i = 0; i < 5; i++)
-                {
-                    if (Buttons[i].Checked) { GetAnswer[Question] = Letter[i]; }
-                }
-            } else if (Type == 'c')
-            {
-                for (int i =0; i < 5; i++)
-                {
-                    if (Letter[i] == GetAnswer[Question])
-                    {
-                        Buttons[i].Checked = true;
-                    }
-                }
-            }
-        }
-
-        private int GetResult(char[] Answers, char[,] GoodAnswers, int Variant)
-        {
-            int result = 0;
-            for (int i =0; i < 8; i++)
-            {
-                if (Answers[i] == GoodAnswers[Variant,i]) { result++; }
-            }
-            return result;
+            Testing.CheckAnswer('c', Data, Answers, Buttons);
+            Testing.ChangeQuestion(Data, questions, Buttons, LabelQuestion, PictureQuestion);
         }
     }
 }

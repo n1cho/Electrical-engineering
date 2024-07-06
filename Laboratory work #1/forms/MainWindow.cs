@@ -1,4 +1,5 @@
 using Audits;
+using Laboratory_work__1.forms;
 
 namespace Laboratory_work__1
 {
@@ -279,22 +280,46 @@ namespace Laboratory_work__1
             }
         }
 
-        private void теоритичніВідомостіToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TheoryWindow TheoryWindow = new TheoryWindow();
-            TheoryWindow.Show();
-        }
-
-        private void порядокВиконанняToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ProcedureWindow ProcedureWindow = new ProcedureWindow();
-            ProcedureWindow.Show();
-        }
-
         private void тестовіЗапитанняToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TestWindow TestWindow = new TestWindow();
+            TestWindowSecondLab TestWindow = new TestWindowSecondLab();
             TestWindow.Show();
+        }
+
+        private void лабораторнаРобота1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TheoryWindowFirstLab TheoryWindowFirstLab = new TheoryWindowFirstLab();
+            TheoryWindowFirstLab.Show();
+        }
+
+        private void лабораторнаРобота2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TheoryWindowSecondLab TheoryWindowSecondLab = new TheoryWindowSecondLab();
+            TheoryWindowSecondLab.Show();
+        }
+
+        private void лабораторнаРобота1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcedureWindowFirstLab ProcedureWindowFirstLab = new ProcedureWindowFirstLab();
+            ProcedureWindowFirstLab.Show();
+        }
+
+        private void лабораторнаРобота2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProcedureWindowSecondLab ProcedureWindowSecondLab = new ProcedureWindowSecondLab();
+            ProcedureWindowSecondLab.Show();
+        }
+
+        private void лабораторнаРобота1ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            TestWindowFirstLab TestWindowFirstLab = new TestWindowFirstLab();
+            TestWindowFirstLab.Show();
+        }
+
+        private void лабораторнаРобота2ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            TestWindowSecondLab TestWindowSecondLab = new TestWindowSecondLab();
+            TestWindowSecondLab.Show();
         }
     }
 }

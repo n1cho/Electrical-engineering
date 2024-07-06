@@ -67,8 +67,14 @@
             TextBoxElement4 = new TextBox();
             menuStrip1 = new MenuStrip();
             теоритичніВідомостіToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота1ToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem = new ToolStripMenuItem();
             порядокВиконанняToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота1ToolStripMenuItem1 = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem1 = new ToolStripMenuItem();
             тестовіЗапитанняToolStripMenuItem = new ToolStripMenuItem();
+            лабораторнаРобота1ToolStripMenuItem2 = new ToolStripMenuItem();
+            лабораторнаРобота2ToolStripMenuItem2 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)MainPicture).BeginInit();
             PanelResult.SuspendLayout();
             PanelInputElement.SuspendLayout();
@@ -432,24 +438,66 @@
             // 
             // теоритичніВідомостіToolStripMenuItem
             // 
+            теоритичніВідомостіToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { лабораторнаРобота1ToolStripMenuItem, лабораторнаРобота2ToolStripMenuItem });
             теоритичніВідомостіToolStripMenuItem.Name = "теоритичніВідомостіToolStripMenuItem";
             теоритичніВідомостіToolStripMenuItem.Size = new Size(136, 20);
             теоритичніВідомостіToolStripMenuItem.Text = "Теоритичні відомості";
-            теоритичніВідомостіToolStripMenuItem.Click += теоритичніВідомостіToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота1ToolStripMenuItem
+            // 
+            лабораторнаРобота1ToolStripMenuItem.Name = "лабораторнаРобота1ToolStripMenuItem";
+            лабораторнаРобота1ToolStripMenuItem.Size = new Size(211, 22);
+            лабораторнаРобота1ToolStripMenuItem.Text = "Лабораторна робота №1";
+            лабораторнаРобота1ToolStripMenuItem.Click += лабораторнаРобота1ToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота2ToolStripMenuItem
+            // 
+            лабораторнаРобота2ToolStripMenuItem.Name = "лабораторнаРобота2ToolStripMenuItem";
+            лабораторнаРобота2ToolStripMenuItem.Size = new Size(211, 22);
+            лабораторнаРобота2ToolStripMenuItem.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem.Click += лабораторнаРобота2ToolStripMenuItem_Click;
             // 
             // порядокВиконанняToolStripMenuItem
             // 
+            порядокВиконанняToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { лабораторнаРобота1ToolStripMenuItem1, лабораторнаРобота2ToolStripMenuItem1 });
             порядокВиконанняToolStripMenuItem.Name = "порядокВиконанняToolStripMenuItem";
             порядокВиконанняToolStripMenuItem.Size = new Size(129, 20);
             порядокВиконанняToolStripMenuItem.Text = "Порядок виконання";
-            порядокВиконанняToolStripMenuItem.Click += порядокВиконанняToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота1ToolStripMenuItem1
+            // 
+            лабораторнаРобота1ToolStripMenuItem1.Name = "лабораторнаРобота1ToolStripMenuItem1";
+            лабораторнаРобота1ToolStripMenuItem1.Size = new Size(211, 22);
+            лабораторнаРобота1ToolStripMenuItem1.Text = "Лабораторна робота №1";
+            лабораторнаРобота1ToolStripMenuItem1.Click += лабораторнаРобота1ToolStripMenuItem1_Click;
+            // 
+            // лабораторнаРобота2ToolStripMenuItem1
+            // 
+            лабораторнаРобота2ToolStripMenuItem1.Name = "лабораторнаРобота2ToolStripMenuItem1";
+            лабораторнаРобота2ToolStripMenuItem1.Size = new Size(211, 22);
+            лабораторнаРобота2ToolStripMenuItem1.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem1.Click += лабораторнаРобота2ToolStripMenuItem1_Click;
             // 
             // тестовіЗапитанняToolStripMenuItem
             // 
+            тестовіЗапитанняToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { лабораторнаРобота1ToolStripMenuItem2, лабораторнаРобота2ToolStripMenuItem2 });
             тестовіЗапитанняToolStripMenuItem.Name = "тестовіЗапитанняToolStripMenuItem";
             тестовіЗапитанняToolStripMenuItem.Size = new Size(117, 20);
             тестовіЗапитанняToolStripMenuItem.Text = "Тестові запитання";
-            тестовіЗапитанняToolStripMenuItem.Click += тестовіЗапитанняToolStripMenuItem_Click;
+            // 
+            // лабораторнаРобота1ToolStripMenuItem2
+            // 
+            лабораторнаРобота1ToolStripMenuItem2.Name = "лабораторнаРобота1ToolStripMenuItem2";
+            лабораторнаРобота1ToolStripMenuItem2.Size = new Size(211, 22);
+            лабораторнаРобота1ToolStripMenuItem2.Text = "Лабораторна робота №1";
+            лабораторнаРобота1ToolStripMenuItem2.Click += лабораторнаРобота1ToolStripMenuItem2_Click;
+            // 
+            // лабораторнаРобота2ToolStripMenuItem2
+            // 
+            лабораторнаРобота2ToolStripMenuItem2.Name = "лабораторнаРобота2ToolStripMenuItem2";
+            лабораторнаРобота2ToolStripMenuItem2.Size = new Size(211, 22);
+            лабораторнаРобота2ToolStripMenuItem2.Text = "Лабораторна робота №2";
+            лабораторнаРобота2ToolStripMenuItem2.Click += лабораторнаРобота2ToolStripMenuItem2_Click;
             // 
             // MainWindow
             // 
@@ -472,7 +520,7 @@
             MainMenuStrip = menuStrip1;
             Name = "MainWindow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Лабораторна робота №1";
+            Text = "Лабораторна робота №1/№2";
             ((System.ComponentModel.ISupportInitialize)MainPicture).EndInit();
             PanelResult.ResumeLayout(false);
             PanelResult.PerformLayout();
@@ -527,5 +575,11 @@
         private Label LabelPw;
         private ToolStripMenuItem порядокВиконанняToolStripMenuItem;
         private ToolStripMenuItem тестовіЗапитанняToolStripMenuItem;
+        private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem;
+        private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem1;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem1;
+        private ToolStripMenuItem лабораторнаРобота1ToolStripMenuItem2;
+        private ToolStripMenuItem лабораторнаРобота2ToolStripMenuItem2;
     }
 }

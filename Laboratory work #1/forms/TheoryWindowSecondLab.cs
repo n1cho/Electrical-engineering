@@ -1,8 +1,8 @@
 ﻿namespace Laboratory_work__1
 {
-    public partial class TheoryWindow : Form
+    public partial class TheoryWindowSecondLab : Form
     {
-        public TheoryWindow()
+        public TheoryWindowSecondLab()
         {
             InitializeComponent();
         }
